@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nghia\\source\\repos\\XML_CuoiKi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|c:\\users\\nghia\\source\\repos\\xml_cuoiki\\xml_cuoiki\\laptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\laptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Laptop.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nghia\\source\\repos\\XML_CuoiKi\\XML_CuoiKi\\Laptop.cs",
+              "RelativeDocumentMoniker": "XML_CuoiKi\\Laptop.cs",
+              "ToolTip": "C:\\Users\\nghia\\source\\repos\\XML_CuoiKi\\XML_CuoiKi\\Laptop.cs [Design]",
+              "RelativeToolTip": "XML_CuoiKi\\Laptop.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:23:00.504Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
