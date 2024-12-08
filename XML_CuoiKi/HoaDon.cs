@@ -56,5 +56,20 @@ namespace XML_CuoiKi
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            {
+                XemHoaDon formXemHoaDon = new XemHoaDon(); // Tạo đối tượng form
+                formXemHoaDon.Show(); // Hiển thị form
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ThemChiTietHoaDon formThemChiTiet = new ThemChiTietHoaDon(); // Tạo đối tượng form
+            formThemChiTiet.Show(); // Hiển thị form
+        }
+
     }
 }

@@ -106,6 +106,12 @@
     <Compile Include="ThemChiTietHoaDon.Designer.cs">
       <DependentUpon>ThemChiTietHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="XemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemHoaDon.Designer.cs">
+      <DependentUpon>XemHoaDon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Danhmuclaptop.resx">
       <DependentUpon>Danhmuclaptop.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +142,9 @@
     </Compile>
     <EmbeddedResource Include="ThemChiTietHoaDon.resx">
       <DependentUpon>ThemChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemHoaDon.resx">
+      <DependentUpon>XemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
