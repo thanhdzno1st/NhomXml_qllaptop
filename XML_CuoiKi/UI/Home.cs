@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XML_CuoiKi.Models;
 using XML_CuoiKi.UI;
 
 namespace XML_CuoiKi
 {
     public partial class Home : Form
     {
+		connect connect = new connect();
         public string HoTen { get; set; }
+        public int MaNguoiDung { get; set; }
         public string Quyen { get; set; }
         public Home()
         {
@@ -31,18 +34,13 @@ namespace XML_CuoiKi
 
         private void btn_hoadon_Click(object sender, EventArgs e)
         {
-            ShowControl(new HoaDon());
+            ShowControl(new HoaDon(MaNguoiDung));
         }
 
         private void btn_nguoidung_Click(object sender, EventArgs e)
         {
-            if(Quyen == "Admin") { 
-                ShowControl(new NguoiDung());
-            }
-            else
-            {
-                MessageBox.Show("Bạn không có quyền truy cập vào đây", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            ShowControl(new NguoiDung());
+
         }
 
   
@@ -63,10 +61,19 @@ namespace XML_CuoiKi
         private void Home_Load(object sender, EventArgs e)
         {
             ShowControl(new TrangChu());
-            tb_hoTen.Text = HoTen;
-            tb_quyen.Text = Quyen;
+			tb_hoTen.Text = HoTen;
+			tb_quyen.Text = Quyen;
+			// Kiểm tra quyền và ẩn nút btn_nguoidung nếu quyền là "nhân viên"
+			if (Quyen.Equals("Nhân viên", StringComparison.OrdinalIgnoreCase))
+			{
+				btn_nguoidung.Visible = false; // Ẩn nút
+			}
+			else
+			{
+				btn_nguoidung.Visible = true; // Hiển thị nút (nếu không phải nhân viên)
+			}
 
-        }
+		}
 
         private void btn_Danhmuc_Click(object sender, EventArgs e)
         {
@@ -91,8 +98,8 @@ namespace XML_CuoiKi
 
         private void button9_Click(object sender, EventArgs e)
         {
-            DangNhap dn = new DangNhap();
-            dn.Show();
+			XML_CuoiKi.UI.DangNhap dn = new XML_CuoiKi.UI.DangNhap();
+			dn.Show();
             this.Hide();
         }
 
@@ -100,5 +107,25 @@ namespace XML_CuoiKi
         {
             ShowControl(new Nhaplaptop());
         }
-    }
+
+		private void tb_hoTen_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void panel2_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void Panel_navigation_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }

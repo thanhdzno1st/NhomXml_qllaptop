@@ -7,10 +7,12 @@
           <xs:element name="_x0027_ChiTietNhap_x0027_">
             <xs:complexType>
               <xs:sequence>
+                <xs:element name="MaChiTietNhap" type="xs:int" minOccurs="0" />
                 <xs:element name="MaNhapHang" type="xs:int" minOccurs="0" />
                 <xs:element name="MaLaptop" type="xs:int" minOccurs="0" />
                 <xs:element name="SoLuongNhap" type="xs:int" minOccurs="0" />
-                <xs:element name="GiaNhap" type="xs:int" minOccurs="0" />
+                <xs:element name="GiaNhap" type="xs:string" minOccurs="0" />
+                <xs:element name="ThanhTienNhap" type="xs:string" minOccurs="0" />
               </xs:sequence>
             </xs:complexType>
           </xs:element>
@@ -19,27 +21,19 @@
     </xs:element>
   </xs:schema>
   <_x0027_ChiTietNhap_x0027_>
+    <MaChiTietNhap>1</MaChiTietNhap>
     <MaNhapHang>1</MaNhapHang>
     <MaLaptop>1</MaLaptop>
-    <SoLuongNhap>2</SoLuongNhap>
-    <GiaNhap>20000</GiaNhap>
+    <SoLuongNhap>50</SoLuongNhap>
+    <GiaNhap>45000</GiaNhap>
+    <ThanhTienNhap>2250000</ThanhTienNhap>
   </_x0027_ChiTietNhap_x0027_>
   <_x0027_ChiTietNhap_x0027_>
+    <MaChiTietNhap>2</MaChiTietNhap>
     <MaNhapHang>1</MaNhapHang>
     <MaLaptop>2</MaLaptop>
-    <SoLuongNhap>3</SoLuongNhap>
-    <GiaNhap>30000</GiaNhap>
-  </_x0027_ChiTietNhap_x0027_>
-  <_x0027_ChiTietNhap_x0027_>
-    <MaNhapHang>2</MaNhapHang>
-    <MaLaptop>1</MaLaptop>
-    <SoLuongNhap>3</SoLuongNhap>
-    <GiaNhap>2000</GiaNhap>
-  </_x0027_ChiTietNhap_x0027_>
-  <_x0027_ChiTietNhap_x0027_>
-    <MaNhapHang>2</MaNhapHang>
-    <MaLaptop>2</MaLaptop>
-    <SoLuongNhap>3</SoLuongNhap>
-    <GiaNhap>4000</GiaNhap>
+    <SoLuongNhap>50</SoLuongNhap>
+    <GiaNhap>25000</GiaNhap>
+    <ThanhTienNhap>1250000</ThanhTienNhap>
   </_x0027_ChiTietNhap_x0027_>
 </NewDataSet>

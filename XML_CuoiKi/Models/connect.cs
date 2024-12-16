@@ -98,13 +98,61 @@ namespace XML_CuoiKi.Models
             doc.Save(fileName);
         }
 
-        public void InsertOrUpDateSQL(string sql)
-        {
-            SqlConnection con = new SqlConnection(Conn);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
-    }
+		public void InsertOrUpDateSQL(string sql)
+		{
+			try
+			{
+				// Mở kết nối
+				using (SqlConnection con = new SqlConnection(Conn))
+				{
+					con.Open();
+
+					// Tạo lệnh SQL
+					SqlCommand cmd = new SqlCommand(sql, con);
+
+					// Thực thi câu lệnh SQL
+					cmd.ExecuteNonQuery();
+				}
+			}
+			catch (SqlException sqlEx)
+			{
+				
+			}
+			catch (Exception ex)
+			{
+				
+			}
+		}
+
+
+		public string LayHoTenTuMaNguoiDung(int maNguoiDung)
+		{
+			string hoTen = null; // Giá trị mặc định nếu không tìm thấy
+			string query = "SELECT HoTen FROM NguoiDung WHERE MaNguoiDung = @MaNguoiDung";
+
+			try
+			{
+				using (SqlConnection con = new SqlConnection(Conn))
+				{
+					con.Open();
+					using (SqlCommand cmd = new SqlCommand(query, con))
+					{
+						cmd.Parameters.AddWithValue("@MaNguoiDung", maNguoiDung);
+						var result = cmd.ExecuteScalar();
+						if (result != null)
+						{
+							hoTen = result.ToString();
+						}
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi khi tìm Họ Tên: " + ex.Message);
+			}
+
+			return hoTen;
+		}
+
+	}
 }

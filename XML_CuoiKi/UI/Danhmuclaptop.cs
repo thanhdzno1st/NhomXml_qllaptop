@@ -31,7 +31,7 @@ namespace XML_CuoiKi
                 }
                 catch (Exception ex)
                 {
-                    
+                    MessageBox.Show("Lỗi khi đọc file XML: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -74,55 +74,13 @@ namespace XML_CuoiKi
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(tb_tenDanhMuc.Text))
-            {
-                MessageBox.Show("Vui lòng nhập tên danh mục!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            string filePath = "./DanhMucLaptop.xml";
-            DataSet dataSet = new DataSet();
-
-            // Đọc dữ liệu từ file XML
-            if (File.Exists(filePath))
-            {
-                dataSet.ReadXml(filePath);
-            }
-            else
-            {
-                // Nếu file không tồn tại, tạo bảng mới
-                DataTable dt = new DataTable("DanhMucLaptop");
-                dt.Columns.Add("MaDanhMuc", typeof(int));
-                dt.Columns.Add("TenDanhMuc", typeof(string));
-                dt.Columns.Add("MoTa", typeof(string));
-                dataSet.Tables.Add(dt);
-            }
-
-            DataTable laptopTable = dataSet.Tables[0];
-
-            // Tự động tạo mã danh mục mới
-            int newDanhmucLaptopCode = GenerateNewDanhmucLaptopCode(laptopTable);
-
-            // Thêm danh mục mới vào DataTable
-            DataRow newRow = laptopTable.NewRow();
-            newRow["MaDanhMuc"] = newDanhmucLaptopCode;
-            newRow["TenDanhMuc"] = tb_tenDanhMuc.Text;
-            newRow["MoTa"] = tb_moTa.Text;
-            laptopTable.Rows.Add(newRow);
-
-            try
-            {
-                // Ghi dữ liệu vào file XML
-                dataSet.WriteXml(filePath);
-                MessageBox.Show("Thêm danh mục thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Danhmuclaptop_Load(sender, e); // Cập nhật lại DataGridView
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi thêm danh mục: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            string MaDanhMuc = tb_idDanhMuc.Text;
+            string TenDanhMuc = tb_tenDanhMuc.Text;
+            string MoTa = tb_moTa.Text;
+            dm.themDM(MaDanhMuc, TenDanhMuc, MoTa);
+            MessageBox.Show("Thêm danh mục thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Danhmuclaptop_Load(sender, e); // Cập nhật lại DataGridView
         }
-
 
         private void btn_sua_Click(object sender, EventArgs e)
         {

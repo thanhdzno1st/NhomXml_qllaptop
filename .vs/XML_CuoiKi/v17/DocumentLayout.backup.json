@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nghia\\source\\repos\\XML_CuoiKi\\",
+  "WorkspaceRootPath": "D:\\New folder (2)\\NhomXml_qllaptop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|c:\\users\\nghia\\source\\repos\\xml_cuoiki\\xml_cuoiki\\laptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\laptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|d:\\new folder (2)\\nhomxml_qllaptop\\xml_cuoiki\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|D:\\New folder (2)\\NhomXml_qllaptop\\xml_cuoiki\\ui\\themchitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\ui\\themchitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|D:\\New folder (2)\\NhomXml_qllaptop\\xml_cuoiki\\ui\\themchitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\ui\\themchitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|D:\\New folder (2)\\NhomXml_qllaptop\\xml_cuoiki\\models\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\models\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|D:\\New folder (2)\\NhomXml_qllaptop\\xml_cuoiki\\models\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\models\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|D:\\New folder (2)\\NhomXml_qllaptop\\xml_cuoiki\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A8680-B074-424F-AF92-A6AC2B720C77}|XML_CuoiKi\\XML_CuoiKi.csproj|solutionrelative:xml_cuoiki\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +34,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "connect.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\connect.cs",
+              "RelativeDocumentMoniker": "XML_CuoiKi\\Models\\connect.cs",
+              "ToolTip": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\connect.cs",
+              "RelativeToolTip": "XML_CuoiKi\\Models\\connect.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAwHcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:00:31.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\Main.cs",
+              "RelativeDocumentMoniker": "XML_CuoiKi\\Models\\Main.cs",
+              "ToolTip": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\Main.cs",
+              "RelativeToolTip": "XML_CuoiKi\\Models\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:00:29.824Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Laptop.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\nghia\\source\\repos\\XML_CuoiKi\\XML_CuoiKi\\Laptop.cs",
-              "RelativeDocumentMoniker": "XML_CuoiKi\\Laptop.cs",
-              "ToolTip": "C:\\Users\\nghia\\source\\repos\\XML_CuoiKi\\XML_CuoiKi\\Laptop.cs [Design]",
-              "RelativeToolTip": "XML_CuoiKi\\Laptop.cs [Design]",
+              "Title": "HoaDon.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\HoaDon.cs",
+              "RelativeDocumentMoniker": "XML_CuoiKi\\Models\\HoaDon.cs",
+              "ToolTip": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\HoaDon.cs",
+              "RelativeToolTip": "XML_CuoiKi\\Models\\HoaDon.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAwHwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T12:23:00.504Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-16T17:45:55.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThemChiTietHoaDon.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs",
+              "RelativeDocumentMoniker": "XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs",
+              "ToolTip": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs",
+              "RelativeToolTip": "XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAASwFAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:39:00.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThemChiTietHoaDon.cs [Design]",
+              "DocumentMoniker": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs",
+              "RelativeDocumentMoniker": "XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs",
+              "ToolTip": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs [Design]",
+              "RelativeToolTip": "XML_CuoiKi\\UI\\ThemChiTietHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:38:58.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChiTietHoaDon.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\ChiTietHoaDon.cs",
+              "RelativeDocumentMoniker": "XML_CuoiKi\\Models\\ChiTietHoaDon.cs",
+              "ToolTip": "D:\\New folder (2)\\NhomXml_qllaptop\\XML_CuoiKi\\Models\\ChiTietHoaDon.cs",
+              "RelativeToolTip": "XML_CuoiKi\\Models\\ChiTietHoaDon.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAUwIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:26:03.54Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

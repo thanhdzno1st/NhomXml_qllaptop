@@ -11,7 +11,7 @@
                 <xs:element name="MaNhaCungCap" type="xs:int" minOccurs="0" />
                 <xs:element name="MaNhanVien" type="xs:int" minOccurs="0" />
                 <xs:element name="NgayNhap" type="xs:string" minOccurs="0" />
-                <xs:element name="TongTienNhap" type="xs:int" minOccurs="0" />
+                <xs:element name="TongTienNhap" type="xs:string" minOccurs="0" />
               </xs:sequence>
             </xs:complexType>
           </xs:element>
@@ -22,15 +22,8 @@
   <_x0027_NhapLaptop_x0027_>
     <MaNhapHang>1</MaNhapHang>
     <MaNhaCungCap>2</MaNhaCungCap>
-    <MaNhanVien>1</MaNhanVien>
-    <NgayNhap>2024-12-16</NgayNhap>
-    <TongTienNhap>0</TongTienNhap>
-  </_x0027_NhapLaptop_x0027_>
-  <_x0027_NhapLaptop_x0027_>
-    <MaNhapHang>2</MaNhapHang>
-    <MaNhaCungCap>2</MaNhaCungCap>
-    <MaNhanVien>1</MaNhanVien>
-    <NgayNhap>2024-12-16</NgayNhap>
-    <TongTienNhap>18000</TongTienNhap>
+    <MaNhanVien>3</MaNhanVien>
+    <NgayNhap>2024-12-17</NgayNhap>
+    <TongTienNhap>3500000</TongTienNhap>
   </_x0027_NhapLaptop_x0027_>
 </NewDataSet>

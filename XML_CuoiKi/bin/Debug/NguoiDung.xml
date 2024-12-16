@@ -25,10 +25,9 @@
   </xs:schema>
   <_x0027_NguoiDung_x0027_>
     <MaNguoiDung>1</MaNguoiDung>
-    <HoTen>Admin 1</HoTen>
+    <HoTen>Admin AA</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
-    <Email>
-    </Email>
+    <Email />
     <SoDienThoai>0123123123</SoDienThoai>
     <DiaChi>Cổ Luỹ</DiaChi>
     <TenDangNhap>lamphong1</TenDangNhap>
@@ -36,23 +35,10 @@
     <PhanQuyen>admin</PhanQuyen>
   </_x0027_NguoiDung_x0027_>
   <_x0027_NguoiDung_x0027_>
-    <MaNguoiDung>2</MaNguoiDung>
-    <HoTen>Admin 2</HoTen>
-    <NgaySinh>20-04-2004</NgaySinh>
-    <Email>
-    </Email>
-    <SoDienThoai>0123123123</SoDienThoai>
-    <DiaChi>Cổ Luỹ</DiaChi>
-    <TenDangNhap>lamphong2</TenDangNhap>
-    <MatKhau>123</MatKhau>
-    <PhanQuyen>admin</PhanQuyen>
-  </_x0027_NguoiDung_x0027_>
-  <_x0027_NguoiDung_x0027_>
     <MaNguoiDung>3</MaNguoiDung>
     <HoTen>Nhân viên</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
-    <Email>
-    </Email>
+    <Email />
     <SoDienThoai>0123123123</SoDienThoai>
     <DiaChi>Cổ Luỹ</DiaChi>
     <TenDangNhap>lamphong3</TenDangNhap>
@@ -61,7 +47,7 @@
   </_x0027_NguoiDung_x0027_>
   <_x0027_NguoiDung_x0027_>
     <MaNguoiDung>4</MaNguoiDung>
-    <HoTen>Khách hàng</HoTen>
+    <HoTen>Khách hàng A</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
     <Email>
     </Email>

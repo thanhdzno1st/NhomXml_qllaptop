@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
 using XML_CuoiKi.Models;
@@ -26,7 +27,9 @@ namespace XML_CuoiKi
                     dataSet.ReadXml(filePath);
 
                     dataGridView1.DataSource = dataSet.Tables[0];
-                }
+					int newNdpCode = GenerateNewNguoidungCode(dataSet.Tables[0]);
+					tb_maND.Text = newNdpCode.ToString();
+				}
                 catch (Exception ex)
                 {
                     MessageBox.Show("Lỗi khi đọc file XML: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -37,8 +40,27 @@ namespace XML_CuoiKi
                 MessageBox.Show("File XML không tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+		private int GenerateNewNguoidungCode(DataTable laptopTable)
+		{
+			// Kiểm tra xem bảng laptop có dữ liệu không
+			if (laptopTable.Rows.Count == 0)
+			{
+				return 1; // Nếu không có laptop nào, trả về mã đầu tiên là 1
+			}
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+			// Lấy tất cả các mã laptop hiện có (giả sử mã là kiểu int)
+			var existingCodes = laptopTable.AsEnumerable()
+											.Select(row => row.Field<int>("MaNguoiDung"))
+											.ToList();
+
+			// Lấy mã laptop cao nhất
+			int maxCode = existingCodes.Max();
+
+			// Tạo mã laptop mới (cộng 1 vào mã cao nhất)
+			return maxCode + 1;
+		}
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -117,5 +139,15 @@ namespace XML_CuoiKi
                 MessageBox.Show("Lỗi khi xoá người dùng: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    }
+
+		private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }

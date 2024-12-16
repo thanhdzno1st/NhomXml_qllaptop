@@ -116,18 +116,41 @@ namespace XML_CuoiKi
             }
         }
 
-            private void btn_them_Click_1(object sender, EventArgs e)
+        private void btn_them_Click_1(object sender, EventArgs e)
         {
-            string MaNhaCungCap = tb_maNhaCungCap.Text;
             string TenNhaCungCap = tb_tenNhaCungCap.Text;
             string SoDienThoai = tb_soDienThoai.Text;
             string Email = tb_email.Text;
             string DiaChi = tb_diaChi.Text;
             string Anh = tb_anh.Text;
-            ncc.them(MaNhaCungCap, TenNhaCungCap, SoDienThoai, Email, DiaChi, Anh);
-            MessageBox.Show("Thêm nhà cung cấp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Nhacungcap_load(sender, e); // Cập nhật lại DataGridView
+
+            // Kiểm tra xem tất cả các trường có trống không
+            if (string.IsNullOrWhiteSpace(TenNhaCungCap))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                // Lấy mã nhà cung cấp tự động
+                string filePath = "./NhaCungCap.xml";
+                DataSet dataSet = new DataSet();
+                dataSet.ReadXml(filePath);
+                int newMaNhaCungCap = GenerateNewnhacungcapCode(dataSet.Tables[0]);
+
+                // Thêm nhà cung cấp mới với mã tự động
+                ncc.them(newMaNhaCungCap.ToString(), TenNhaCungCap, SoDienThoai, Email, DiaChi, Anh);
+                MessageBox.Show("Thêm nhà cung cấp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Nhacungcap_load(sender, e); // Cập nhật lại DataGridView
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi khi thêm
+                MessageBox.Show("Lỗi khi thêm nhà cung cấp: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void btn_sua_Click_1(object sender, EventArgs e)
         {
@@ -173,3 +196,4 @@ namespace XML_CuoiKi
     }
 
 }
+

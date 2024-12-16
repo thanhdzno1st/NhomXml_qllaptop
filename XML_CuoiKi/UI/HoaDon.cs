@@ -16,13 +16,16 @@ namespace XML_CuoiKi
 {
     public partial class HoaDon : UserControl
     {
-        Models.HoaDon hd = new Models.HoaDon();
-        public HoaDon()
+		private int maNguoitao;
+		Models.HoaDon hd = new Models.HoaDon();
+        public HoaDon(int maNguoitao)
         {
             InitializeComponent();
-        }
+			this.maNguoitao = maNguoitao;
 
-        private void HoaDon_load(object sender, EventArgs e)
+		}
+
+		private void HoaDon_load(object sender, EventArgs e)
         {
             string filePath = "./HoaDon.xml";
 
@@ -34,7 +37,9 @@ namespace XML_CuoiKi
                     dataSet.ReadXml(filePath);
 
                     dataGridView1.DataSource = dataSet.Tables[0];
-                }
+					int newhoadonCode = GenerateNewHoadonCode(dataSet.Tables[0]);
+					tb_maHoaDon.Text = newhoadonCode.ToString();
+				}
                 catch (Exception ex)
                 {
                     MessageBox.Show("Lỗi khi đọc file XML: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -45,8 +50,27 @@ namespace XML_CuoiKi
                 MessageBox.Show("File XML không tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+		private int GenerateNewHoadonCode(DataTable laptopTable)
+		{
+			// Kiểm tra xem bảng laptop có dữ liệu không
+			if (laptopTable.Rows.Count == 0)
+			{
+				return 1; // Nếu không có laptop nào, trả về mã đầu tiên là 1
+			}
 
-        private void button3_Click(object sender, EventArgs e)
+			// Lấy tất cả các mã laptop hiện có (giả sử mã là kiểu int)
+			var existingCodes = laptopTable.AsEnumerable()
+											.Select(row => row.Field<int>("MaHoaDon"))
+											.ToList();
+
+			// Lấy mã laptop cao nhất
+			int maxCode = existingCodes.Max();
+
+			// Tạo mã laptop mới (cộng 1 vào mã cao nhất)
+			return maxCode + 1;
+		}
+
+		private void button3_Click(object sender, EventArgs e)
         {
             string maHoaDon = tb_search.Text;
 
@@ -70,7 +94,7 @@ namespace XML_CuoiKi
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
 
                 tb_maHoaDon.Text = row.Cells["MaHoaDon"].Value?.ToString();
-                tb_maNguoiDung.Text = row.Cells["MaNguoiDung"].Value?.ToString();
+                tb_tenkhachhang.Text = row.Cells["TenKhachHang"].Value?.ToString();
                 tb_search.Text = row.Cells["MaHoaDon"].Value?.ToString();
             }
         }
@@ -80,9 +104,8 @@ namespace XML_CuoiKi
             try
             {
                 string MaHoaDon = tb_maHoaDon.Text;
-                string MaNguoiDung = tb_maNguoiDung.Text;
-
-                if (string.IsNullOrEmpty(MaHoaDon) || string.IsNullOrEmpty(MaNguoiDung))
+                string TenKhachHang = tb_tenkhachhang.Text;
+                if (string.IsNullOrEmpty(MaHoaDon) || string.IsNullOrEmpty(TenKhachHang))
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -94,7 +117,7 @@ namespace XML_CuoiKi
                     return;
                 }
 
-                hd.ThemHoaDon(MaHoaDon, MaNguoiDung);
+                hd.ThemHoaDon(MaHoaDon, maNguoitao, TenKhachHang);
                 MessageBox.Show("Thêm hóa đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 HoaDon_load(sender, e);
             }
@@ -127,10 +150,10 @@ namespace XML_CuoiKi
             {
                 DataTable dt = new DataTable();
                 dt.Columns.Add("MaHoaDon");
-                dt.Columns.Add("MaNguoiDung");
+                dt.Columns.Add("TenKhachHang");
                 dt.Columns.Add("NgayLap");
                 dt.Columns.Add("TongTien");
-                object[] list = { dv[index]["MaHoaDon"], dv[index]["MaNguoiDung"], dv[index]["NgayLap"], dv[index]["TongTien"] };
+                object[] list = { dv[index]["MaHoaDon"], dv[index]["TenKhachHang"], dv[index]["NgayLap"], dv[index]["TongTien"] };
                 dt.Rows.Add(list);
                 dataGridView1.DataSource = dt;
             }
@@ -159,7 +182,7 @@ namespace XML_CuoiKi
                     return;
                 }
 
-                string MaNguoiDung = hoaDonNode["MaNguoiDung"]?.InnerText;
+                string TenKhachHang = hoaDonNode["TenKhachHang"]?.InnerText;
                 string NgayLap = hoaDonNode["NgayLap"]?.InnerText;
                 string TongTien = hoaDonNode["TongTien"]?.InnerText;
 
@@ -172,7 +195,7 @@ namespace XML_CuoiKi
                     writer.WriteStartElement("_x0027_HoaDon_x0027_");
 
                     writer.WriteElementString("MaHoaDon", MaHoaDon);
-                    writer.WriteElementString("MaNguoiDung", MaNguoiDung);
+                    writer.WriteElementString("TenKhachHang", TenKhachHang);
                     writer.WriteElementString("NgayLap", NgayLap);
                     writer.WriteElementString("TongTien", TongTien);
 
@@ -231,7 +254,7 @@ namespace XML_CuoiKi
             XmlNode hoaDonNode = hoaDonDoc.SelectSingleNode("/_x0027_HoaDon_x0027_");
 
             string MaHoaDon = hoaDonNode["MaHoaDon"]?.InnerText;
-            string MaNguoiDung = hoaDonNode["MaNguoiDung"]?.InnerText;
+            string TenKhachHang = hoaDonNode["TenKhachHang"]?.InnerText;
             string NgayLap = hoaDonNode["NgayLap"]?.InnerText;
             string TongTien = hoaDonNode["TongTien"]?.InnerText;
 
@@ -258,7 +281,7 @@ namespace XML_CuoiKi
 
             htmlContent.AppendLine("<table>");
             htmlContent.AppendLine("<tr><td><strong>Mã Hóa Đơn:</strong></td><td>" + MaHoaDon + "</td></tr>");
-            htmlContent.AppendLine("<tr><td><strong>Mã Người Dùng:</strong></td><td>" + MaNguoiDung + "</td></tr>");
+            htmlContent.AppendLine("<tr><td><strong>Tên khách hàng:</strong></td><td>" + TenKhachHang + "</td></tr>");
             htmlContent.AppendLine("<tr><td><strong>Ngày Lập:</strong></td><td>" + NgayLap + "</td></tr>");
             htmlContent.AppendLine("<tr><td><strong>Tổng Tiền:</strong></td><td>" + TongTien + "</td></tr>");
             htmlContent.AppendLine("</table>");
@@ -298,5 +321,15 @@ namespace XML_CuoiKi
                 UseShellExecute = true
             });
         }
-    }
+
+		private void label4_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }

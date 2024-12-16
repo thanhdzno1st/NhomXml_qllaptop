@@ -28,7 +28,7 @@
                 <xs:element name="BaoMatKhac" type="xs:string" minOccurs="0" />
                 <xs:element name="HeDieuHanh" type="xs:string" minOccurs="0" />
                 <xs:element name="Pin" type="xs:string" minOccurs="0" />
-                <xs:element name="GiaBan" type="xs:decimal" minOccurs="0" />
+                <xs:element name="GiaBan" type="xs:string" minOccurs="0" />
                 <xs:element name="SoLuongTon" type="xs:int" minOccurs="0" />
                 <xs:element name="Anh" type="xs:string" minOccurs="0" />
               </xs:sequence>

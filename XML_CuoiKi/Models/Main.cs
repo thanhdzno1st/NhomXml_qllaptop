@@ -29,22 +29,24 @@ namespace XML_CuoiKi.Models
         }
         public void CapNhapSQL()
         {
-            //Xóa toàn bộ dữ liệu các bảng
-            Fxml.InsertOrUpDateSQL("delete from NguoiDung");
-            Fxml.InsertOrUpDateSQL("delete from Laptop");
-            Fxml.InsertOrUpDateSQL("delete from DanhMucLaptop");
-            Fxml.InsertOrUpDateSQL("delete from NhaCungCap");
-            Fxml.InsertOrUpDateSQL("delete from HoaDon");
-            Fxml.InsertOrUpDateSQL("delete from ChiTietHoaDon");
-            Fxml.InsertOrUpDateSQL("delete from NhapLaptop");
-            Fxml.InsertOrUpDateSQL("delete from ChiTietNhap");
-            //Cập nhập toàn bộ dữ liệu các bảng
+            Fxml.InsertOrUpDateSQL("DELETE FROM NhapLaptop");
+            Fxml.InsertOrUpDateSQL("DELETE FROM ChiTietHoaDon");
+            Fxml.InsertOrUpDateSQL("DELETE FROM ChiTietNhap");
+            Fxml.InsertOrUpDateSQL("DELETE FROM NhaCungCap");
+            Fxml.InsertOrUpDateSQL("DELETE FROM HoaDon");
+            Fxml.InsertOrUpDateSQL("DELETE FROM Laptop");
+            Fxml.InsertOrUpDateSQL("DELETE FROM DanhMucLaptop");
+            Fxml.InsertOrUpDateSQL("DELETE FROM NguoiDung");
+
+
+
+            // Cập nhật toàn bộ dữ liệu các bảng
             CapNhapTungBang("NguoiDung");
-            CapNhapTungBang("Laptop");
             CapNhapTungBang("DanhMucLaptop");
-            CapNhapTungBang("NhaCungCap");
+            CapNhapTungBang("Laptop");
             CapNhapTungBang("HoaDon");
             CapNhapTungBang("ChiTietHoaDon");
+            CapNhapTungBang("NhaCungCap");
             CapNhapTungBang("NhapLaptop");
             CapNhapTungBang("ChiTietNhap");
         }

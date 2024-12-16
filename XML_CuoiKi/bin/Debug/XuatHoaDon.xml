@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <_x0027_HoaDon_x0027_>
-  <MaHoaDon>3</MaHoaDon>
-  <MaNguoiDung>1</MaNguoiDung>
-  <NgayLap>2024-12-16</NgayLap>
-  <TongTien>99000</TongTien>
+  <MaHoaDon>1</MaHoaDon>
+  <TenKhachHang>Khách hàng 1</TenKhachHang>
+  <NgayLap>2024-12-17</NgayLap>
+  <TongTien>75000</TongTien>
   <_x0027_ChiTietHoaDon_x0027_>
-    <MaLaptop>1</MaLaptop>
-    <TenLaptop>Laptop Gaming Model A</TenLaptop>
+    <MaLaptop>2</MaLaptop>
+    <TenLaptop>HP Pavilion 15</TenLaptop>
     <SoLuong>3</SoLuong>
-    <GiaBan>25000</GiaBan>
+    <GiaBan>14999.99</GiaBan>
   </_x0027_ChiTietHoaDon_x0027_>
   <_x0027_ChiTietHoaDon_x0027_>
     <MaLaptop>2</MaLaptop>
-    <TenLaptop>Laptop Văn phòng Model B</TenLaptop>
+    <TenLaptop>HP Pavilion 15</TenLaptop>
     <SoLuong>2</SoLuong>
-    <GiaBan>12000</GiaBan>
+    <GiaBan>14999.99</GiaBan>
   </_x0027_ChiTietHoaDon_x0027_>
 </_x0027_HoaDon_x0027_>

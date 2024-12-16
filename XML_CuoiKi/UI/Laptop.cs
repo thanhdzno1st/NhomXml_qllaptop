@@ -100,6 +100,29 @@ namespace XML_CuoiKi
             // Tạo mã laptop mới (cộng 1 vào mã cao nhất)
             return maxCode + 1;
         }
+        private int GenerateNewLaptopCodeFromXML(string filePath)
+        {
+            // Kiểm tra xem file XML có tồn tại không
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    DataSet laptopDataSet = new DataSet();
+                    laptopDataSet.ReadXml(filePath);
+
+                    if (laptopDataSet.Tables.Count > 0)
+                    {
+                        DataTable laptopTable = laptopDataSet.Tables[0];
+                        return GenerateNewLaptopCode(laptopTable); // Sử dụng hàm GenerateNewLaptopCode để tạo mã mới
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi đọc file XML Laptop: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            return 1; // Nếu không đọc được, trả về mã đầu tiên là 1
+        }
         private async void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -190,7 +213,6 @@ namespace XML_CuoiKi
         private void btn_them_Click(object sender, EventArgs e)
         {
             // Lấy giá trị từ các TextBox
-            string MaLaptop = tb_maLaptop.Text;
             string TenLaptop = tb_tenLaptop.Text;
             string HangSanXuat = tb_hangSanXuat.Text;
             string LoaiCardDoHoa = tb_loaiCarDoHoa.Text;
@@ -213,6 +235,7 @@ namespace XML_CuoiKi
             decimal GiaBan = Convert.ToDecimal(tb_giaBan.Text);
             int SoLuongTon = Convert.ToInt32(tb_soLuongTon.Text);
             string Anh = tb_anh.Text;
+
             // Lấy giá trị MaDanhMuc từ ComboBox thay vì TextBox
             string MaDanhMuc = cb_danhmuclaptop.SelectedValue?.ToString(); // Lấy giá trị MaDanhMuc từ ComboBox
 
@@ -221,6 +244,9 @@ namespace XML_CuoiKi
                 MessageBox.Show("Vui lòng chọn danh mục laptop!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            // Tạo mã laptop mới tự động
+            string MaLaptop = GenerateNewLaptopCodeFromXML("./Laptop.xml").ToString(); // Tạo mã laptop mới từ file XML
 
             // Gọi hàm them để thêm dữ liệu vào XML
             lt.them(MaLaptop, TenLaptop, HangSanXuat, LoaiCardDoHoa, LoaiCPU, DungLuongRAM,
@@ -234,6 +260,7 @@ namespace XML_CuoiKi
             // Cập nhật lại DataGridView
             Laptop_load(sender, e);
         }
+
 
         private void btn_sua_Click(object sender, EventArgs e)
         {

@@ -8,9 +8,10 @@
             <xs:complexType>
               <xs:sequence>
                 <xs:element name="MaHoaDon" type="xs:int" minOccurs="0" />
+                <xs:element name="TenKhachHang" type="xs:string" minOccurs="0" />
                 <xs:element name="MaNguoiDung" type="xs:int" minOccurs="0" />
                 <xs:element name="NgayLap" type="xs:string" minOccurs="0" />
-                <xs:element name="TongTien" type="xs:int" minOccurs="0" />
+                <xs:element name="TongTien" type="xs:string" minOccurs="0" />
               </xs:sequence>
             </xs:complexType>
           </xs:element>
@@ -20,14 +21,9 @@
   </xs:schema>
   <_x0027_HoaDon_x0027_>
     <MaHoaDon>1</MaHoaDon>
-    <MaNguoiDung>2</MaNguoiDung>
-    <NgayLap>16/12/2024 12:00:00 AM</NgayLap>
-    <TongTien>74000</TongTien>
-  </_x0027_HoaDon_x0027_>
-  <_x0027_HoaDon_x0027_>
-    <MaHoaDon>2</MaHoaDon>
-    <MaNguoiDung>2</MaNguoiDung>
-    <NgayLap>2024-12-16</NgayLap>
-    <TongTien>36000</TongTien>
+    <TenKhachHang>Khách hàng 1</TenKhachHang>
+    <MaNguoiDung>1</MaNguoiDung>
+    <NgayLap>2024-12-17</NgayLap>
+    <TongTien>75000</TongTien>
   </_x0027_HoaDon_x0027_>
 </NewDataSet>

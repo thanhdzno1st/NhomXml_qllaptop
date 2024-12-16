@@ -7,10 +7,12 @@
           <xs:element name="_x0027_ChiTietHoaDon_x0027_">
             <xs:complexType>
               <xs:sequence>
+                <xs:element name="MaChiTiet" type="xs:int" minOccurs="0" />
                 <xs:element name="MaHoaDon" type="xs:int" minOccurs="0" />
                 <xs:element name="MaLaptop" type="xs:int" minOccurs="0" />
                 <xs:element name="SoLuong" type="xs:int" minOccurs="0" />
-                <xs:element name="GiaBan" type="xs:int" minOccurs="0" />
+                <xs:element name="GiaBan" type="xs:string" minOccurs="0" />
+                <xs:element name="ThanhTien" type="xs:string" minOccurs="0" />
               </xs:sequence>
             </xs:complexType>
           </xs:element>
@@ -19,21 +21,19 @@
     </xs:element>
   </xs:schema>
   <_x0027_ChiTietHoaDon_x0027_>
+    <MaChiTiet>1</MaChiTiet>
     <MaHoaDon>1</MaHoaDon>
-    <MaLaptop>1</MaLaptop>
-    <SoLuong>2</SoLuong>
-    <GiaBan>25000</GiaBan>
-  </_x0027_ChiTietHoaDon_x0027_>
-  <_x0027_ChiTietHoaDon_x0027_>
-    <MaHoaDon>1</MaHoaDon>
-    <MaLaptop>2</MaLaptop>
-    <SoLuong>2</SoLuong>
-    <GiaBan>12000</GiaBan>
-  </_x0027_ChiTietHoaDon_x0027_>
-  <_x0027_ChiTietHoaDon_x0027_>
-    <MaHoaDon>2</MaHoaDon>
     <MaLaptop>2</MaLaptop>
     <SoLuong>3</SoLuong>
-    <GiaBan>12000</GiaBan>
+    <GiaBan>14999.99</GiaBan>
+    <ThanhTien>44999.97</ThanhTien>
+  </_x0027_ChiTietHoaDon_x0027_>
+  <_x0027_ChiTietHoaDon_x0027_>
+    <MaChiTiet>2</MaChiTiet>
+    <MaHoaDon>1</MaHoaDon>
+    <MaLaptop>2</MaLaptop>
+    <SoLuong>2</SoLuong>
+    <GiaBan>14999.99</GiaBan>
+    <ThanhTien>29999.98</ThanhTien>
   </_x0027_ChiTietHoaDon_x0027_>
 </NewDataSet>

@@ -49,28 +49,32 @@ namespace XML_CuoiKi.UI
                 {
                     string quyen = rows[0]["PhanQuyen"].ToString();
                     string hoTen = rows[0]["HoTen"].ToString();
+                    int MaNguoiDung = Convert.ToInt32(rows[0]["MaNguoiDung"]);
 
-                    if (quyen == "admin")
-                    {
-                        MessageBox.Show("Đăng nhập thành công với quyền Admin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        // Chuyển đến giao diện quản lý
-                        Home home = new Home();
-                        home.Quyen = "Admin";
-                        home.HoTen = hoTen;
-                        home.Show();
-                        this.Hide();
-                    }
-                    else if (quyen == "nhan_vien")
-                    {
-                        MessageBox.Show("Đăng nhập thành công với quyền nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					if (quyen == "nhan_vien")
+					{
+						MessageBox.Show("Đăng nhập thành công với quyền nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         // Chuyển đến giao diện quản lý
                         Home home = new Home();
                         home.Quyen = "Nhân viên";
                         home.HoTen = hoTen;
+                        home.MaNguoiDung = MaNguoiDung;
                         home.Show();
                         this.Hide();
                     }
                     else
+                    if(quyen == "admin")
+                    {
+						MessageBox.Show("Đăng nhập thành công với quyền admin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						// Chuyển đến giao diện quản lý
+						Home home = new Home();
+						home.Quyen = "Admin";
+                        home.HoTen = hoTen;
+                        home.MaNguoiDung = MaNguoiDung;
+						home.Show();
+						this.Hide();
+					}
+					else 
                     {
                         MessageBox.Show("Bạn không có quyền truy cập vào hệ thống quản lý!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -85,5 +89,10 @@ namespace XML_CuoiKi.UI
                 MessageBox.Show("Thông tin đăng nhập không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    }
+
+		private void DangNhap_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

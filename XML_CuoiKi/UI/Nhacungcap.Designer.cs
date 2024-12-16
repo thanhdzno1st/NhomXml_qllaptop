@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tb_maNhaCungCap = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_anh = new System.Windows.Forms.TextBox();
@@ -36,8 +38,6 @@
             this.tb_diaChi = new System.Windows.Forms.TextBox();
             this.tb_email = new System.Windows.Forms.TextBox();
             this.pb_anh = new System.Windows.Forms.PictureBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label22 = new System.Windows.Forms.Label();
             this.tb_tenNhaCungCap = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -47,24 +47,61 @@
             this.btn_them = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.tb_soDienThoai = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // groupBox8
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(552, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 35);
-            this.label1.TabIndex = 65;
-            this.label1.Text = "Nhà cung cấp";
+            this.groupBox8.Controls.Add(this.dataGridView1);
+            this.groupBox8.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox8.Location = new System.Drawing.Point(20, 378);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(1264, 361);
+            this.groupBox8.TabIndex = 64;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Danh sách nhà cung cấp";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 37);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1252, 318);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.tb_maNhaCungCap);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.tb_anh);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.tb_diaChi);
+            this.groupBox1.Controls.Add(this.tb_email);
+            this.groupBox1.Controls.Add(this.pb_anh);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.tb_tenNhaCungCap);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.btn_xoa);
+            this.groupBox1.Controls.Add(this.btn_sua);
+            this.groupBox1.Controls.Add(this.label44);
+            this.groupBox1.Controls.Add(this.btn_them);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.tb_soDienThoai);
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
+            this.groupBox1.Location = new System.Drawing.Point(20, 71);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1264, 285);
+            this.groupBox1.TabIndex = 63;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin cơ bản";
             // 
             // tb_maNhaCungCap
             // 
@@ -136,29 +173,6 @@
             this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_anh.TabIndex = 93;
             this.pb_anh.TabStop = false;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.dataGridView1);
-            this.groupBox8.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox8.Location = new System.Drawing.Point(20, 377);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(1264, 361);
-            this.groupBox8.TabIndex = 67;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Danh sách nhà cung cấp";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 37);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1252, 318);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label22
             // 
@@ -268,47 +282,33 @@
             this.tb_soDienThoai.Size = new System.Drawing.Size(243, 24);
             this.tb_soDienThoai.TabIndex = 87;
             // 
-            // groupBox1
+            // label1
             // 
-            this.groupBox1.Controls.Add(this.tb_maNhaCungCap);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.tb_anh);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.tb_diaChi);
-            this.groupBox1.Controls.Add(this.tb_email);
-            this.groupBox1.Controls.Add(this.pb_anh);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.tb_tenNhaCungCap);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.btn_xoa);
-            this.groupBox1.Controls.Add(this.btn_sua);
-            this.groupBox1.Controls.Add(this.label44);
-            this.groupBox1.Controls.Add(this.btn_them);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.tb_soDienThoai);
-            this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(20, 70);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1264, 285);
-            this.groupBox1.TabIndex = 66;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin cơ bản";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(552, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 35);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Nhà cung cấp";
             // 
             // Nhacungcap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label1);
             this.Name = "Nhacungcap";
             this.Size = new System.Drawing.Size(1305, 752);
             this.Load += new System.EventHandler(this.Nhacungcap_load);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,25 +316,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_maNhaCungCap;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tb_anh;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tb_diaChi;
-        private System.Windows.Forms.TextBox tb_email;
-        private System.Windows.Forms.PictureBox pb_anh;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox tb_tenNhaCungCap;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox tb_soDienThoai;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.PictureBox pb_anh;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox tb_tenNhaCungCap;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox tb_diaChi;
+        private System.Windows.Forms.TextBox tb_maNhaCungCap;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_anh;
+        private System.Windows.Forms.Label label2;
     }
 }

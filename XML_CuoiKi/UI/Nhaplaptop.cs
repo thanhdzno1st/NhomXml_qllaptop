@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -14,10 +9,12 @@ namespace XML_CuoiKi.UI
     public partial class Nhaplaptop : UserControl
     {
         Models.NhapLaptop nl = new Models.NhapLaptop();
+
         public Nhaplaptop()
         {
             InitializeComponent();
         }
+
         private void Nhaplaptop_load(object sender, EventArgs e)
         {
             string filePath = "./NhapLaptop.xml";
@@ -30,6 +27,9 @@ namespace XML_CuoiKi.UI
                     dataSet.ReadXml(filePath);
 
                     dataGridView1.DataSource = dataSet.Tables[0];
+                    int newMaNhapHang = GenerateNewMaNhapHang(dataSet.Tables[0]);
+                    tb_maNhapHang.Text = newMaNhapHang.ToString(); // Hiển thị mã tự động tăng
+                    tb_maNhapHang.Enabled = false; // Ẩn không cho sửa textbox mã nhập hàng
                 }
                 catch (Exception ex)
                 {
@@ -42,13 +42,27 @@ namespace XML_CuoiKi.UI
             }
         }
 
+        private int GenerateNewMaNhapHang(DataTable nhapLaptopTable)
+        {
+            if (nhapLaptopTable.Rows.Count == 0)
+            {
+                return 1;
+            }
+
+            var existingCodes = nhapLaptopTable.AsEnumerable()
+                                                .Select(row => row.Field<int>("MaNhapHang"))
+                                                .ToList();
+
+            int maxCode = existingCodes.Max();
+            return maxCode + 1;
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
 
-                tb_maNhapHang.Text = row.Cells["MaNhapHang"].Value?.ToString();
                 tb_maNhanVien.Text = row.Cells["MaNhanVien"].Value?.ToString();
                 tb_maNhaCungCap.Text = row.Cells["MaNhaCungCap"].Value?.ToString();
                 tb_search.Text = row.Cells["MaNhapHang"].Value?.ToString();
@@ -59,15 +73,16 @@ namespace XML_CuoiKi.UI
         {
             try
             {
-                string MaNhapHang = tb_maNhapHang.Text;
                 string MaNhanVien = tb_maNhanVien.Text;
                 string MaNhaCungCap = tb_maNhaCungCap.Text;
 
-                if (string.IsNullOrEmpty(MaNhapHang) || string.IsNullOrEmpty(MaNhanVien) || string.IsNullOrEmpty(MaNhaCungCap))
+                if (string.IsNullOrEmpty(MaNhanVien) || string.IsNullOrEmpty(MaNhaCungCap))
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+
+                string MaNhapHang = tb_maNhapHang.Text;
 
                 if (nl.MaHoaDonDaTonTai(MaNhapHang))
                 {
@@ -124,7 +139,7 @@ namespace XML_CuoiKi.UI
 
             if (string.IsNullOrEmpty(maNhapHang))
             {
-                MessageBox.Show("Vui lòng phiếu nhập trước!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn phiếu nhập trước!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -133,6 +148,19 @@ namespace XML_CuoiKi.UI
                 MaNhapHang = maNhapHang
             };
             formThemChiTiet.Show();
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                tb_maNhapHang.Text = row.Cells["MaNhapHang"].Value?.ToString();
+                tb_maNhanVien.Text = row.Cells["MaNhanVien"].Value?.ToString();
+                tb_maNhaCungCap.Text = row.Cells["MaNhaCungCap"].Value?.ToString();
+                tb_search.Text = row.Cells["MaNhapHang"].Value?.ToString();
+            }
         }
     }
 }
