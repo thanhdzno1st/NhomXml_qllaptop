@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<_x0027_HoaDon_x0027_>
+  <MaHoaDon>2</MaHoaDon>
+  <MaNguoiDung>2</MaNguoiDung>
+  <NgayLap>2024-12-16</NgayLap>
+  <TongTien>36000</TongTien>
+  <_x0027_ChiTietHoaDon_x0027_>
+    <MaLaptop>2</MaLaptop>
+    <TenLaptop>Laptop Văn phòng Model B</TenLaptop>
+    <SoLuong>3</SoLuong>
+    <GiaBan>12000</GiaBan>
+  </_x0027_ChiTietHoaDon_x0027_>
+</_x0027_HoaDon_x0027_>

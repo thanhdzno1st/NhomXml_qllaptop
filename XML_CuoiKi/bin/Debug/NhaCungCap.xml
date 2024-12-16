@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_NhaCungCap_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_NhaCungCap_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaNhaCungCap" type="xs:int" minOccurs="0" />
+                <xs:element name="TenNhaCungCap" type="xs:string" minOccurs="0" />
+                <xs:element name="SoDienThoai" type="xs:string" minOccurs="0" />
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="DiaChi" type="xs:string" minOccurs="0" />
+                <xs:element name="Anh" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_NhaCungCap_x0027_>
+    <MaNhaCungCap>1</MaNhaCungCap>
+    <TenNhaCungCap>Tên Nhà Cung Cấp 1</TenNhaCungCap>
+    <SoDienThoai>0123456789</SoDienThoai>
+    <Email>email1@domain.com</Email>
+    <DiaChi>Địa chỉ 1</DiaChi>
+    <Anh>path_to_image1.jpg</Anh>
+  </_x0027_NhaCungCap_x0027_>
+  <_x0027_NhaCungCap_x0027_>
+    <MaNhaCungCap>2</MaNhaCungCap>
+    <TenNhaCungCap>Tên Nhà Cung Cấp 2</TenNhaCungCap>
+    <SoDienThoai>0987654321</SoDienThoai>
+    <Email>email2@domain.com</Email>
+    <DiaChi>Địa chỉ 2</DiaChi>
+    <Anh>path_to_image2.jpg</Anh>
+  </_x0027_NhaCungCap_x0027_>
+  <_x0027_NhaCungCap_x0027_>
+    <MaNhaCungCap>3</MaNhaCungCap>
+    <TenNhaCungCap>Tên Nhà Cung Cấp 3</TenNhaCungCap>
+    <SoDienThoai>0345678901</SoDienThoai>
+    <Email>email3@domain.com</Email>
+    <DiaChi>Địa chỉ 3</DiaChi>
+    <Anh>path_to_image3.jpg</Anh>
+  </_x0027_NhaCungCap_x0027_>
+  <_x0027_NhaCungCap_x0027_>
+    <MaNhaCungCap>4</MaNhaCungCap>
+    <TenNhaCungCap>Cặc</TenNhaCungCap>
+    <SoDienThoai>0345678901</SoDienThoai>
+    <Email>email3@domain.com</Email>
+    <DiaChi>Địa chỉ 3</DiaChi>
+    <Anh>path_to_image3.jpg</Anh>
+  </_x0027_NhaCungCap_x0027_>
+</NewDataSet>

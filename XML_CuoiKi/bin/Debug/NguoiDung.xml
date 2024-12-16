@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_NguoiDung_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_NguoiDung_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaNguoiDung" type="xs:int" minOccurs="0" />
+                <xs:element name="HoTen" type="xs:string" minOccurs="0" />
+                <xs:element name="NgaySinh" type="xs:string" minOccurs="0" />
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="SoDienThoai" type="xs:string" minOccurs="0" />
+                <xs:element name="DiaChi" type="xs:string" minOccurs="0" />
+                <xs:element name="TenDangNhap" type="xs:string" minOccurs="0" />
+                <xs:element name="MatKhau" type="xs:string" minOccurs="0" />
+                <xs:element name="PhanQuyen" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_NguoiDung_x0027_>
+    <MaNguoiDung>1</MaNguoiDung>
+    <HoTen>Quản Lý Phong</HoTen>
+    <NgaySinh>20-04-2004</NgaySinh>
+    <Email>concac@gmail.com</Email>
+    <SoDienThoai>0123123123</SoDienThoai>
+    <DiaChi>Cổ Luỹ</DiaChi>
+    <TenDangNhap>lamphong1</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <PhanQuyen>quan_ly</PhanQuyen>
+  </_x0027_NguoiDung_x0027_>
+  <_x0027_NguoiDung_x0027_>
+    <MaNguoiDung>2</MaNguoiDung>
+    <HoTen>Cái lồn cặc chó</HoTen>
+    <NgaySinh>20-04-2004</NgaySinh>
+    <Email>concac@gmail.com</Email>
+    <SoDienThoai>0123123123</SoDienThoai>
+    <DiaChi>Cổ Luỹ</DiaChi>
+    <TenDangNhap>lamphong2</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <PhanQuyen>quan_ly</PhanQuyen>
+  </_x0027_NguoiDung_x0027_>
+  <_x0027_NguoiDung_x0027_>
+    <MaNguoiDung>3</MaNguoiDung>
+    <HoTen>Cái lồn cặc chó</HoTen>
+    <NgaySinh>20-04-2004</NgaySinh>
+    <Email>concac@gmail.com</Email>
+    <SoDienThoai>0123123123</SoDienThoai>
+    <DiaChi>Cổ Luỹ</DiaChi>
+    <TenDangNhap>lamphong3</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <PhanQuyen>khach_hang</PhanQuyen>
+  </_x0027_NguoiDung_x0027_>
+  <_x0027_NguoiDung_x0027_>
+    <MaNguoiDung>4</MaNguoiDung>
+    <HoTen>Cái lồn cặc chó</HoTen>
+    <NgaySinh>20-04-2004</NgaySinh>
+    <Email>concac@gmail.com</Email>
+    <SoDienThoai>0123123123</SoDienThoai>
+    <DiaChi>Cổ Luỹ</DiaChi>
+    <TenDangNhap>lamphong4</TenDangNhap>
+    <MatKhau>123</MatKhau>
+    <PhanQuyen>khach_hang</PhanQuyen>
+  </_x0027_NguoiDung_x0027_>
+</NewDataSet>

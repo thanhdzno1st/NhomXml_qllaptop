@@ -1,0 +1,119 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0027_Laptop_x0027_" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="_x0027_Laptop_x0027_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MaLaptop" type="xs:int" minOccurs="0" />
+                <xs:element name="TenLaptop" type="xs:string" minOccurs="0" />
+                <xs:element name="HangSanXuat" type="xs:string" minOccurs="0" />
+                <xs:element name="LoaiCardDoHoa" type="xs:string" minOccurs="0" />
+                <xs:element name="LoaiCPU" type="xs:string" minOccurs="0" />
+                <xs:element name="DungLuongRAM" type="xs:string" minOccurs="0" />
+                <xs:element name="LoaiRAM" type="xs:string" minOccurs="0" />
+                <xs:element name="LoaiOCung" type="xs:string" minOccurs="0" />
+                <xs:element name="KichThuocManHinh" type="xs:string" minOccurs="0" />
+                <xs:element name="DoPhanGiaiManHinh" type="xs:string" minOccurs="0" />
+                <xs:element name="CongNgheAmThanh" type="xs:string" minOccurs="0" />
+                <xs:element name="CongGiaoTiep" type="xs:string" minOccurs="0" />
+                <xs:element name="Wifi" type="xs:string" minOccurs="0" />
+                <xs:element name="Bluetooth" type="xs:string" minOccurs="0" />
+                <xs:element name="KichThuoc" type="xs:string" minOccurs="0" />
+                <xs:element name="TrongLuong" type="xs:string" minOccurs="0" />
+                <xs:element name="TinhNangDacBiet" type="xs:string" minOccurs="0" />
+                <xs:element name="BaoMatKhac" type="xs:string" minOccurs="0" />
+                <xs:element name="HeDieuHanh" type="xs:string" minOccurs="0" />
+                <xs:element name="Pin" type="xs:string" minOccurs="0" />
+                <xs:element name="GiaBan" type="xs:int" minOccurs="0" />
+                <xs:element name="SoLuongTon" type="xs:int" minOccurs="0" />
+                <xs:element name="Anh" type="xs:string" minOccurs="0" />
+                <xs:element name="MaDanhMuc" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <_x0027_Laptop_x0027_>
+    <MaLaptop>1</MaLaptop>
+    <TenLaptop>Laptop Gaming Model A</TenLaptop>
+    <HangSanXuat>Hãng A</HangSanXuat>
+    <LoaiCardDoHoa>Card A</LoaiCardDoHoa>
+    <LoaiCPU>Intel Core i9</LoaiCPU>
+    <DungLuongRAM>16GB</DungLuongRAM>
+    <LoaiRAM>DDR4</LoaiRAM>
+    <LoaiOCung>SSD 1TB</LoaiOCung>
+    <KichThuocManHinh>15.6"</KichThuocManHinh>
+    <DoPhanGiaiManHinh>1920x1080</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>Công nghệ âm thanh Dolby</CongNgheAmThanh>
+    <CongGiaoTiep>HDMI, USB-C</CongGiaoTiep>
+    <Wifi>WiFi 6</Wifi>
+    <Bluetooth>Bluetooth 5.0</Bluetooth>
+    <KichThuoc>36 x 24 x 2 cm</KichThuoc>
+    <TrongLuong>2.5 kg</TrongLuong>
+    <TinhNangDacBiet>Màn hình chống chói, RGB</TinhNangDacBiet>
+    <BaoMatKhac>Khóa vân tay</BaoMatKhac>
+    <HeDieuHanh>Windows 11</HeDieuHanh>
+    <Pin>5000mAh</Pin>
+    <GiaBan>25000</GiaBan>
+    <SoLuongTon>10</SoLuongTon>
+    <Anh>path_to_image.jpg</Anh>
+    <MaDanhMuc>1</MaDanhMuc>
+  </_x0027_Laptop_x0027_>
+  <_x0027_Laptop_x0027_>
+    <MaLaptop>2</MaLaptop>
+    <TenLaptop>Laptop Văn phòng Model B</TenLaptop>
+    <HangSanXuat>Hãng B</HangSanXuat>
+    <LoaiCardDoHoa>Card B</LoaiCardDoHoa>
+    <LoaiCPU>Intel Core i5</LoaiCPU>
+    <DungLuongRAM>8GB</DungLuongRAM>
+    <LoaiRAM>DDR4</LoaiRAM>
+    <LoaiOCung>HDD 512GB</LoaiOCung>
+    <KichThuocManHinh>14"</KichThuocManHinh>
+    <DoPhanGiaiManHinh>1366x768</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>Công nghệ âm thanh stereo</CongNgheAmThanh>
+    <CongGiaoTiep>USB 3.0, Ethernet</CongGiaoTiep>
+    <Wifi>WiFi 5</Wifi>
+    <Bluetooth>Bluetooth 4.2</Bluetooth>
+    <KichThuoc>32 x 23 x 1.8 cm</KichThuoc>
+    <TrongLuong>1.8 kg</TrongLuong>
+    <TinhNangDacBiet>Mỏng nhẹ, thời lượng pin lâu</TinhNangDacBiet>
+    <BaoMatKhac>Chống nước</BaoMatKhac>
+    <HeDieuHanh>Windows 10</HeDieuHanh>
+    <Pin>4000mAh</Pin>
+    <GiaBan>12000</GiaBan>
+    <SoLuongTon>25</SoLuongTon>
+    <Anh>path_to_image.jpg</Anh>
+    <MaDanhMuc>2</MaDanhMuc>
+  </_x0027_Laptop_x0027_>
+  <_x0027_Laptop_x0027_>
+    <MaLaptop>3</MaLaptop>
+    <TenLaptop>Laptop AI Model C</TenLaptop>
+    <HangSanXuat>Hãng C</HangSanXuat>
+    <LoaiCardDoHoa>Card C</LoaiCardDoHoa>
+    <LoaiCPU>AMD Ryzen 7</LoaiCPU>
+    <DungLuongRAM>32GB</DungLuongRAM>
+    <LoaiRAM>DDR5</LoaiRAM>
+    <LoaiOCung>SSD 2TB</LoaiOCung>
+    <KichThuocManHinh>17.3"</KichThuocManHinh>
+    <DoPhanGiaiManHinh>2560x1440</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>Công nghệ âm thanh AI</CongNgheAmThanh>
+    <CongGiaoTiep>USB 3.1, Thunderbolt</CongGiaoTiep>
+    <Wifi>WiFi 6</Wifi>
+    <Bluetooth>Bluetooth 5.1</Bluetooth>
+    <KichThuoc>40 x 28 x 2.5 cm</KichThuoc>
+    <TrongLuong>3 kg</TrongLuong>
+    <TinhNangDacBiet>Tích hợp AI, nhận diện khuôn mặt</TinhNangDacBiet>
+    <BaoMatKhac>Bảo mật vân tay</BaoMatKhac>
+    <HeDieuHanh>Linux</HeDieuHanh>
+    <Pin>7000mAh</Pin>
+    <GiaBan>45000</GiaBan>
+    <SoLuongTon>5</SoLuongTon>
+    <Anh>path_to_image.jpg</Anh>
+    <MaDanhMuc>3</MaDanhMuc>
+  </_x0027_Laptop_x0027_>
+</NewDataSet>

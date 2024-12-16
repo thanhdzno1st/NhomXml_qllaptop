@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<_x0027_HoaDon_x0027_>
+  <MaHoaDon>3</MaHoaDon>
+  <MaNguoiDung>1</MaNguoiDung>
+  <NgayLap>2024-12-16</NgayLap>
+  <TongTien>164000</TongTien>
+  <_x0027_ChiTietHoaDon_x0027_>
+    <MaLaptop>1</MaLaptop>
+    <TenLaptop>Laptop Gaming Model A</TenLaptop>
+    <SoLuong>2</SoLuong>
+    <GiaBan>25000</GiaBan>
+  </_x0027_ChiTietHoaDon_x0027_>
+  <_x0027_ChiTietHoaDon_x0027_>
+    <MaLaptop>2</MaLaptop>
+    <TenLaptop>Laptop Văn phòng Model B</TenLaptop>
+    <SoLuong>2</SoLuong>
+    <GiaBan>12000</GiaBan>
+  </_x0027_ChiTietHoaDon_x0027_>
+  <_x0027_ChiTietHoaDon_x0027_>
+    <MaLaptop>3</MaLaptop>
+    <TenLaptop>Laptop AI Model C</TenLaptop>
+    <SoLuong>2</SoLuong>
+    <GiaBan>45000</GiaBan>
+  </_x0027_ChiTietHoaDon_x0027_>
+</_x0027_HoaDon_x0027_>

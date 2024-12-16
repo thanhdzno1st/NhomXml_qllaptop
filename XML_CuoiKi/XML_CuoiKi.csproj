@@ -8,12 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>XML_CuoiKi</RootNamespace>
     <AssemblyName>XML_CuoiKi</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,6 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -62,118 +62,114 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chitietkhuyenmai.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Chitietkhuyenmai.Designer.cs">
-      <DependentUpon>Chitietkhuyenmai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chitietnhap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Chitietnhap.Designer.cs">
-      <DependentUpon>Chitietnhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DangNhap.cs">
+    <Compile Include="Connect.cs" />
+    <Compile Include="Models\ChiTietHoaDon.cs" />
+    <Compile Include="Models\connect.cs" />
+    <Compile Include="Models\DangNhap.cs" />
+    <Compile Include="Models\DanhMuc.cs" />
+    <Compile Include="Models\HeThong.cs" />
+    <Compile Include="Models\HoaDon.cs" />
+    <Compile Include="Models\Laptop.cs" />
+    <Compile Include="Models\Main.cs" />
+    <Compile Include="Models\NguoiDung.cs" />
+    <Compile Include="Models\NhaCungCap.cs" />
+    <Compile Include="UI\ChiTietNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangNhap.Designer.cs">
+    <Compile Include="UI\ChiTietNhap.Designer.cs">
+      <DependentUpon>ChiTietNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danhmuclaptop.cs">
+    <Compile Include="UI\Danhmuclaptop.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Danhmuclaptop.Designer.cs">
+    <Compile Include="UI\Danhmuclaptop.Designer.cs">
       <DependentUpon>Danhmuclaptop.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon.cs">
+    <Compile Include="UI\HoaDon.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HoaDon.Designer.cs">
+    <Compile Include="UI\HoaDon.Designer.cs">
       <DependentUpon>HoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="UI\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="UI\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhuyenMai.cs">
+    <Compile Include="UI\Laptop.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="KhuyenMai.Designer.cs">
-      <DependentUpon>KhuyenMai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Laptop.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Laptop.Designer.cs">
+    <Compile Include="UI\Laptop.Designer.cs">
       <DependentUpon>Laptop.cs</DependentUpon>
     </Compile>
-    <Compile Include="NguoiDung.cs">
+    <Compile Include="UI\NguoiDung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NguoiDung.Designer.cs">
+    <Compile Include="UI\NguoiDung.Designer.cs">
       <DependentUpon>NguoiDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nhacungcap.cs">
+    <Compile Include="UI\Nhacungcap.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Nhacungcap.Designer.cs">
+    <Compile Include="UI\Nhacungcap.Designer.cs">
       <DependentUpon>Nhacungcap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nhaplaptop.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Nhaplaptop.Designer.cs">
-      <DependentUpon>Nhaplaptop.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThemChiTietHoaDon.cs">
+    <Compile Include="UI\Nhaplaptop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Nhaplaptop.Designer.cs">
+      <DependentUpon>Nhaplaptop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ThemChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemChiTietHoaDon.Designer.cs">
+    <Compile Include="UI\ThemChiTietHoaDon.Designer.cs">
       <DependentUpon>ThemChiTietHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="XemHoaDon.cs">
+    <Compile Include="UI\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\XemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XemHoaDon.Designer.cs">
+    <Compile Include="UI\XemHoaDon.Designer.cs">
       <DependentUpon>XemHoaDon.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Chitietkhuyenmai.resx">
-      <DependentUpon>Chitietkhuyenmai.cs</DependentUpon>
+    <EmbeddedResource Include="UI\ChiTietNhap.resx">
+      <DependentUpon>ChiTietNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chitietnhap.resx">
-      <DependentUpon>Chitietnhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DangNhap.resx">
+    <EmbeddedResource Include="UI\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Danhmuclaptop.resx">
+    <EmbeddedResource Include="UI\Danhmuclaptop.resx">
       <DependentUpon>Danhmuclaptop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDon.resx">
+    <EmbeddedResource Include="UI\HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="UI\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhuyenMai.resx">
-      <DependentUpon>KhuyenMai.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Laptop.resx">
+    <EmbeddedResource Include="UI\Laptop.resx">
       <DependentUpon>Laptop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NguoiDung.resx">
+    <EmbeddedResource Include="UI\NguoiDung.resx">
       <DependentUpon>NguoiDung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nhacungcap.resx">
+    <EmbeddedResource Include="UI\Nhacungcap.resx">
       <DependentUpon>Nhacungcap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nhaplaptop.resx">
-      <DependentUpon>Nhaplaptop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -185,10 +181,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ThemChiTietHoaDon.resx">
+    <EmbeddedResource Include="UI\Nhaplaptop.resx">
+      <DependentUpon>Nhaplaptop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ThemChiTietHoaDon.resx">
       <DependentUpon>ThemChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XemHoaDon.resx">
+    <EmbeddedResource Include="UI\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\XemHoaDon.resx">
       <DependentUpon>XemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -216,8 +218,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot 2024-12-16 122905.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
