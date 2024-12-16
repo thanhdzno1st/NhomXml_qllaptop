@@ -38,9 +38,9 @@
             this.btn_them = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.tb_idDanhMuc = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,10 +58,10 @@
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.tb_idDanhMuc);
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(24, 69);
+            this.groupBox1.Location = new System.Drawing.Point(20, 71);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1264, 285);
-            this.groupBox1.TabIndex = 58;
+            this.groupBox1.TabIndex = 63;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cơ bản";
             // 
@@ -162,6 +162,7 @@
             // 
             // tb_idDanhMuc
             // 
+            this.tb_idDanhMuc.Enabled = false;
             this.tb_idDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_idDanhMuc.Location = new System.Drawing.Point(229, 63);
             this.tb_idDanhMuc.Margin = new System.Windows.Forms.Padding(4);
@@ -169,26 +170,14 @@
             this.tb_idDanhMuc.Size = new System.Drawing.Size(373, 24);
             this.tb_idDanhMuc.TabIndex = 87;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(527, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 35);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Danh mục Laptop";
-            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.dataGridView1);
             this.groupBox8.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox8.Location = new System.Drawing.Point(24, 376);
+            this.groupBox8.Location = new System.Drawing.Point(20, 378);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(1264, 361);
-            this.groupBox8.TabIndex = 61;
+            this.groupBox8.TabIndex = 64;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Danh sách danh mục laptop";
             // 
@@ -198,18 +187,30 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 18);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1258, 340);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(523, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(245, 35);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Danh mục Laptop";
             // 
             // Danhmuclaptop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.label1);
             this.Name = "Danhmuclaptop";
             this.Size = new System.Drawing.Size(1305, 752);
@@ -224,18 +225,19 @@
         }
 
         #endregion
+
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox tb_idDanhMuc;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox tb_moTa;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Button btn_xoa;
-        private System.Windows.Forms.Button btn_sua;
-        private System.Windows.Forms.Button btn_them;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_tenDanhMuc;
+        private System.Windows.Forms.Button btn_xoa;
+        private System.Windows.Forms.RichTextBox tb_moTa;
+        private System.Windows.Forms.Button btn_sua;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button btn_them;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox tb_idDanhMuc;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }

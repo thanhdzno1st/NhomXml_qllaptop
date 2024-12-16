@@ -22,34 +22,34 @@
   </xs:schema>
   <_x0027_NhaCungCap_x0027_>
     <MaNhaCungCap>1</MaNhaCungCap>
-    <TenNhaCungCap>Tên Nhà Cung Cấp 1</TenNhaCungCap>
+    <TenNhaCungCap>Công ty TNHH Thế Giới Laptop</TenNhaCungCap>
     <SoDienThoai>0123456789</SoDienThoai>
-    <Email>email1@domain.com</Email>
-    <DiaChi>Địa chỉ 1</DiaChi>
-    <Anh>path_to_image1.jpg</Anh>
+    <Email>tglaptop@example.com</Email>
+    <DiaChi>123 Nguyễn Văn Linh, Đà Nẵng</DiaChi>
+    <Anh>https://www.e-spincorp.com/wp-content/uploads/2018/05/logo-mobile-world-joint-stock-company-vn-espincorp-700x700_c.png</Anh>
   </_x0027_NhaCungCap_x0027_>
   <_x0027_NhaCungCap_x0027_>
     <MaNhaCungCap>2</MaNhaCungCap>
-    <TenNhaCungCap>Tên Nhà Cung Cấp 2</TenNhaCungCap>
+    <TenNhaCungCap>Công ty TNHH Công Nghệ Việt</TenNhaCungCap>
     <SoDienThoai>0987654321</SoDienThoai>
-    <Email>email2@domain.com</Email>
-    <DiaChi>Địa chỉ 2</DiaChi>
-    <Anh>path_to_image2.jpg</Anh>
+    <Email>congngheviet@example.com</Email>
+    <DiaChi>45 Lê Duẩn, Hà Nội</DiaChi>
+    <Anh>https://i.chungta.vn/2017/12/22/LogoFPT-2017-copy-3042-1513928399.jpg</Anh>
   </_x0027_NhaCungCap_x0027_>
   <_x0027_NhaCungCap_x0027_>
     <MaNhaCungCap>3</MaNhaCungCap>
-    <TenNhaCungCap>Tên Nhà Cung Cấp 3</TenNhaCungCap>
-    <SoDienThoai>0345678901</SoDienThoai>
-    <Email>email3@domain.com</Email>
-    <DiaChi>Địa chỉ 3</DiaChi>
-    <Anh>path_to_image3.jpg</Anh>
+    <TenNhaCungCap>Công ty CP Máy Tính Hà Nội</TenNhaCungCap>
+    <SoDienThoai>0912345678</SoDienThoai>
+    <Email>maytinhhn@example.com</Email>
+    <DiaChi>678 Trần Hưng Đạo, TP. Hồ Chí Minh</DiaChi>
+    <Anh>https://img.freepik.com/premium-vector/creative-flat-laptop-logo-template_23-2149010239.jpg</Anh>
   </_x0027_NhaCungCap_x0027_>
   <_x0027_NhaCungCap_x0027_>
     <MaNhaCungCap>4</MaNhaCungCap>
-    <TenNhaCungCap>Cặc</TenNhaCungCap>
-    <SoDienThoai>0345678901</SoDienThoai>
-    <Email>email3@domain.com</Email>
-    <DiaChi>Địa chỉ 3</DiaChi>
-    <Anh>path_to_image3.jpg</Anh>
+    <TenNhaCungCap>b</TenNhaCungCap>
+    <SoDienThoai>54</SoDienThoai>
+    <Email>b</Email>
+    <DiaChi>b</DiaChi>
+    <Anh>https://img.freepik.com/premium-vector/creative-flat-laptop-logo-template_23-2149010239.jpg</Anh>
   </_x0027_NhaCungCap_x0027_>
 </NewDataSet>

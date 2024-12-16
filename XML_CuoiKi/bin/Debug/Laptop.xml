@@ -8,6 +8,7 @@
             <xs:complexType>
               <xs:sequence>
                 <xs:element name="MaLaptop" type="xs:int" minOccurs="0" />
+                <xs:element name="MaDanhMuc" type="xs:int" minOccurs="0" />
                 <xs:element name="TenLaptop" type="xs:string" minOccurs="0" />
                 <xs:element name="HangSanXuat" type="xs:string" minOccurs="0" />
                 <xs:element name="LoaiCardDoHoa" type="xs:string" minOccurs="0" />
@@ -27,10 +28,9 @@
                 <xs:element name="BaoMatKhac" type="xs:string" minOccurs="0" />
                 <xs:element name="HeDieuHanh" type="xs:string" minOccurs="0" />
                 <xs:element name="Pin" type="xs:string" minOccurs="0" />
-                <xs:element name="GiaBan" type="xs:int" minOccurs="0" />
+                <xs:element name="GiaBan" type="xs:decimal" minOccurs="0" />
                 <xs:element name="SoLuongTon" type="xs:int" minOccurs="0" />
                 <xs:element name="Anh" type="xs:string" minOccurs="0" />
-                <xs:element name="MaDanhMuc" type="xs:int" minOccurs="0" />
               </xs:sequence>
             </xs:complexType>
           </xs:element>
@@ -40,80 +40,132 @@
   </xs:schema>
   <_x0027_Laptop_x0027_>
     <MaLaptop>1</MaLaptop>
-    <TenLaptop>Laptop Gaming Model A</TenLaptop>
-    <HangSanXuat>Hãng A</HangSanXuat>
-    <LoaiCardDoHoa>Card A</LoaiCardDoHoa>
-    <LoaiCPU>Intel Core i9</LoaiCPU>
+    <MaDanhMuc>1</MaDanhMuc>
+    <TenLaptop>Dell Alienware M15</TenLaptop>
+    <HangSanXuat>Dell</HangSanXuat>
+    <LoaiCardDoHoa>NVIDIA GeForce RTX 3070</LoaiCardDoHoa>
+    <LoaiCPU>Intel Core i7-12700H</LoaiCPU>
     <DungLuongRAM>16GB</DungLuongRAM>
     <LoaiRAM>DDR4</LoaiRAM>
     <LoaiOCung>SSD 1TB</LoaiOCung>
-    <KichThuocManHinh>15.6"</KichThuocManHinh>
-    <DoPhanGiaiManHinh>1920x1080</DoPhanGiaiManHinh>
-    <CongNgheAmThanh>Công nghệ âm thanh Dolby</CongNgheAmThanh>
-    <CongGiaoTiep>HDMI, USB-C</CongGiaoTiep>
-    <Wifi>WiFi 6</Wifi>
-    <Bluetooth>Bluetooth 5.0</Bluetooth>
-    <KichThuoc>36 x 24 x 2 cm</KichThuoc>
+    <KichThuocManHinh>15.6 inch</KichThuocManHinh>
+    <DoPhanGiaiManHinh>QHD 2560 x 1440</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>Dolby Atmos</CongNgheAmThanh>
+    <CongGiaoTiep>USB Type-C, HDMI</CongGiaoTiep>
+    <Wifi>Wi-Fi 6E</Wifi>
+    <Bluetooth>5.2</Bluetooth>
+    <KichThuoc>35.6 x 27.2 x 2.1 cm</KichThuoc>
     <TrongLuong>2.5 kg</TrongLuong>
-    <TinhNangDacBiet>Màn hình chống chói, RGB</TinhNangDacBiet>
-    <BaoMatKhac>Khóa vân tay</BaoMatKhac>
+    <TinhNangDacBiet>Đèn nền phím RGB</TinhNangDacBiet>
+    <BaoMatKhac>Camera IR nhận diện khuôn mặt</BaoMatKhac>
     <HeDieuHanh>Windows 11</HeDieuHanh>
-    <Pin>5000mAh</Pin>
-    <GiaBan>25000</GiaBan>
+    <Pin>86Wh</Pin>
+    <GiaBan>52999.99</GiaBan>
     <SoLuongTon>10</SoLuongTon>
-    <Anh>path_to_image.jpg</Anh>
-    <MaDanhMuc>1</MaDanhMuc>
+    <Anh>https://cdn2.fptshop.com.vn/unsafe/750x0/filters:quality(100)/2024_5_13_638512084168393633_X1504ZA-NJ517W.jpg</Anh>
   </_x0027_Laptop_x0027_>
   <_x0027_Laptop_x0027_>
     <MaLaptop>2</MaLaptop>
-    <TenLaptop>Laptop Văn phòng Model B</TenLaptop>
-    <HangSanXuat>Hãng B</HangSanXuat>
-    <LoaiCardDoHoa>Card B</LoaiCardDoHoa>
-    <LoaiCPU>Intel Core i5</LoaiCPU>
+    <MaDanhMuc>2</MaDanhMuc>
+    <TenLaptop>HP Pavilion 15</TenLaptop>
+    <HangSanXuat>HP</HangSanXuat>
+    <LoaiCardDoHoa>Intel Iris Xe Graphics</LoaiCardDoHoa>
+    <LoaiCPU>Intel Core i5-1135G7</LoaiCPU>
     <DungLuongRAM>8GB</DungLuongRAM>
     <LoaiRAM>DDR4</LoaiRAM>
-    <LoaiOCung>HDD 512GB</LoaiOCung>
-    <KichThuocManHinh>14"</KichThuocManHinh>
-    <DoPhanGiaiManHinh>1366x768</DoPhanGiaiManHinh>
-    <CongNgheAmThanh>Công nghệ âm thanh stereo</CongNgheAmThanh>
-    <CongGiaoTiep>USB 3.0, Ethernet</CongGiaoTiep>
-    <Wifi>WiFi 5</Wifi>
-    <Bluetooth>Bluetooth 4.2</Bluetooth>
-    <KichThuoc>32 x 23 x 1.8 cm</KichThuoc>
-    <TrongLuong>1.8 kg</TrongLuong>
-    <TinhNangDacBiet>Mỏng nhẹ, thời lượng pin lâu</TinhNangDacBiet>
-    <BaoMatKhac>Chống nước</BaoMatKhac>
-    <HeDieuHanh>Windows 10</HeDieuHanh>
-    <Pin>4000mAh</Pin>
-    <GiaBan>12000</GiaBan>
-    <SoLuongTon>25</SoLuongTon>
-    <Anh>path_to_image.jpg</Anh>
-    <MaDanhMuc>2</MaDanhMuc>
+    <LoaiOCung>SSD 512GB</LoaiOCung>
+    <KichThuocManHinh>15.6 inch</KichThuocManHinh>
+    <DoPhanGiaiManHinh>FHD 1920 x 1080</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>DTS Audio</CongNgheAmThanh>
+    <CongGiaoTiep>USB-C, USB-A, HDMI</CongGiaoTiep>
+    <Wifi>Wi-Fi 6</Wifi>
+    <Bluetooth>5.0</Bluetooth>
+    <KichThuoc>36.1 x 24.2 x 1.8 cm</KichThuoc>
+    <TrongLuong>1.75 kg</TrongLuong>
+    <TinhNangDacBiet>Bàn phím số</TinhNangDacBiet>
+    <BaoMatKhac>Không</BaoMatKhac>
+    <HeDieuHanh>Windows 11</HeDieuHanh>
+    <Pin>41Wh</Pin>
+    <GiaBan>14999.99</GiaBan>
+    <SoLuongTon>15</SoLuongTon>
+    <Anh>https://www.hp.com/gb-en/shop/html/Merch/Images/2T953EA-ABU_5_1750x1285.jpg</Anh>
   </_x0027_Laptop_x0027_>
   <_x0027_Laptop_x0027_>
     <MaLaptop>3</MaLaptop>
-    <TenLaptop>Laptop AI Model C</TenLaptop>
-    <HangSanXuat>Hãng C</HangSanXuat>
-    <LoaiCardDoHoa>Card C</LoaiCardDoHoa>
-    <LoaiCPU>AMD Ryzen 7</LoaiCPU>
-    <DungLuongRAM>32GB</DungLuongRAM>
-    <LoaiRAM>DDR5</LoaiRAM>
-    <LoaiOCung>SSD 2TB</LoaiOCung>
-    <KichThuocManHinh>17.3"</KichThuocManHinh>
-    <DoPhanGiaiManHinh>2560x1440</DoPhanGiaiManHinh>
-    <CongNgheAmThanh>Công nghệ âm thanh AI</CongNgheAmThanh>
-    <CongGiaoTiep>USB 3.1, Thunderbolt</CongGiaoTiep>
-    <Wifi>WiFi 6</Wifi>
-    <Bluetooth>Bluetooth 5.1</Bluetooth>
-    <KichThuoc>40 x 28 x 2.5 cm</KichThuoc>
-    <TrongLuong>3 kg</TrongLuong>
-    <TinhNangDacBiet>Tích hợp AI, nhận diện khuôn mặt</TinhNangDacBiet>
-    <BaoMatKhac>Bảo mật vân tay</BaoMatKhac>
-    <HeDieuHanh>Linux</HeDieuHanh>
-    <Pin>7000mAh</Pin>
-    <GiaBan>45000</GiaBan>
-    <SoLuongTon>5</SoLuongTon>
-    <Anh>path_to_image.jpg</Anh>
     <MaDanhMuc>3</MaDanhMuc>
+    <TenLaptop>Apple MacBook Pro 16</TenLaptop>
+    <HangSanXuat>Apple</HangSanXuat>
+    <LoaiCardDoHoa>Apple M2 Max</LoaiCardDoHoa>
+    <LoaiCPU>Apple M2 Max</LoaiCPU>
+    <DungLuongRAM>32GB</DungLuongRAM>
+    <LoaiRAM>LPDDR5</LoaiRAM>
+    <LoaiOCung>SSD 1TB</LoaiOCung>
+    <KichThuocManHinh>16.2 inch</KichThuocManHinh>
+    <DoPhanGiaiManHinh>Liquid Retina XDR 3456 x 2234</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>Hệ thống loa 6 kênh</CongNgheAmThanh>
+    <CongGiaoTiep>Thunderbolt 4, MagSafe 3</CongGiaoTiep>
+    <Wifi>Wi-Fi 6E</Wifi>
+    <Bluetooth>5.3</Bluetooth>
+    <KichThuoc>35.6 x 24.8 x 1.68 cm</KichThuoc>
+    <TrongLuong>2.2 kg</TrongLuong>
+    <TinhNangDacBiet>Touch Bar, Touch ID</TinhNangDacBiet>
+    <BaoMatKhac>Chip bảo mật T2</BaoMatKhac>
+    <HeDieuHanh>macOS Ventura</HeDieuHanh>
+    <Pin>100Wh</Pin>
+    <GiaBan>74999.99</GiaBan>
+    <SoLuongTon>5</SoLuongTon>
+    <Anh>https://www.bhphotovideo.com/images/images2500x2500/asus_g614ji_xs96_16_rog_strix_gaming_1756850.jpg</Anh>
+  </_x0027_Laptop_x0027_>
+  <_x0027_Laptop_x0027_>
+    <MaLaptop>4</MaLaptop>
+    <MaDanhMuc>2</MaDanhMuc>
+    <TenLaptop>Apple MacBook Pro 16</TenLaptop>
+    <HangSanXuat>MSI</HangSanXuat>
+    <LoaiCardDoHoa>Apple M2 Max</LoaiCardDoHoa>
+    <LoaiCPU>Apple M2 Max</LoaiCPU>
+    <DungLuongRAM>32GB</DungLuongRAM>
+    <LoaiRAM>LPDDR5</LoaiRAM>
+    <LoaiOCung>SSD 1TB</LoaiOCung>
+    <KichThuocManHinh>16.2 inch</KichThuocManHinh>
+    <DoPhanGiaiManHinh>Liquid Retina XDR 3456 x 2234</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>Hệ thống loa 6 kênh</CongNgheAmThanh>
+    <CongGiaoTiep>Thunderbolt 4, MagSafe 3</CongGiaoTiep>
+    <Wifi>Wi-Fi 6E</Wifi>
+    <Bluetooth>5.3</Bluetooth>
+    <KichThuoc>35.6 x 24.8 x 1.68 cm</KichThuoc>
+    <TrongLuong>2.2 kg</TrongLuong>
+    <TinhNangDacBiet>Touch Bar, Touch ID</TinhNangDacBiet>
+    <BaoMatKhac>Chip bảo mật T2</BaoMatKhac>
+    <HeDieuHanh>macOS Ventura</HeDieuHanh>
+    <Pin>100Wh</Pin>
+    <GiaBan>74999.99</GiaBan>
+    <SoLuongTon>5</SoLuongTon>
+    <Anh>https://sm.pcmag.com/pcmag_au/gallery/a/apple-macb/apple-macbook-pro-15-inch-2017_57va.jpg</Anh>
+  </_x0027_Laptop_x0027_>
+  <_x0027_Laptop_x0027_>
+    <MaLaptop>5</MaLaptop>
+    <MaDanhMuc>3</MaDanhMuc>
+    <TenLaptop>msi</TenLaptop>
+    <HangSanXuat>HP</HangSanXuat>
+    <LoaiCardDoHoa>g</LoaiCardDoHoa>
+    <LoaiCPU>g</LoaiCPU>
+    <DungLuongRAM>16 GB</DungLuongRAM>
+    <LoaiRAM>2</LoaiRAM>
+    <LoaiOCung>g</LoaiOCung>
+    <KichThuocManHinh>2</KichThuocManHinh>
+    <DoPhanGiaiManHinh>2</DoPhanGiaiManHinh>
+    <CongNgheAmThanh>2</CongNgheAmThanh>
+    <CongGiaoTiep>3</CongGiaoTiep>
+    <Wifi>4</Wifi>
+    <Bluetooth>5</Bluetooth>
+    <KichThuoc>435</KichThuoc>
+    <TrongLuong>1,5</TrongLuong>
+    <TinhNangDacBiet>234234</TinhNangDacBiet>
+    <BaoMatKhac>234</BaoMatKhac>
+    <HeDieuHanh>Windows</HeDieuHanh>
+    <Pin>3</Pin>
+    <GiaBan>4324.00</GiaBan>
+    <SoLuongTon>6</SoLuongTon>
+    <Anh>https://cdn.mos.cms.futurecdn.net/dVKvd3YTVJuSVWNYYkPpYm.jpg</Anh>
   </_x0027_Laptop_x0027_>
 </NewDataSet>
