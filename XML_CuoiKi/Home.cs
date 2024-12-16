@@ -77,5 +77,38 @@ namespace XML_CuoiKi
             ShowControl(new Nhacungcap());
 
         }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ShowControl(new Nhaplaptop());
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            ShowControl(new KhuyenMai());
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ShowControl(new Chitietkhuyenmai());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowControl(new Chitietnhap());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            DangNhap dangnhap = new DangNhap();
+            dangnhap.Show();
+            this.Hide();
+        }
     }
 }

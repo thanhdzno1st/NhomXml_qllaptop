@@ -71,5 +71,10 @@ namespace XML_CuoiKi
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
