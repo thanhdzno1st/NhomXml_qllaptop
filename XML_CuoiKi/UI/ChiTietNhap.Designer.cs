@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_giaNhap = new System.Windows.Forms.TextBox();
+            this.tb_soLuong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_them = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tb_maLaptop = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -53,22 +53,15 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1224, 309);
             this.dataGridView1.TabIndex = 87;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(54, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 28);
-            this.comboBox1.TabIndex = 85;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.tb_maLaptop);
+            this.groupBox1.Controls.Add(this.tb_giaNhap);
+            this.groupBox1.Controls.Add(this.tb_soLuong);
+            this.groupBox1.Controls.Add(this.btn_them);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
@@ -79,21 +72,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin";
             // 
-            // textBox3
+            // tb_giaNhap
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(388, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 30);
-            this.textBox3.TabIndex = 75;
+            this.tb_giaNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_giaNhap.Location = new System.Drawing.Point(388, 100);
+            this.tb_giaNhap.Name = "tb_giaNhap";
+            this.tb_giaNhap.Size = new System.Drawing.Size(241, 30);
+            this.tb_giaNhap.TabIndex = 75;
             // 
-            // textBox2
+            // tb_soLuong
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(720, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 30);
-            this.textBox2.TabIndex = 74;
+            this.tb_soLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_soLuong.Location = new System.Drawing.Point(720, 100);
+            this.tb_soLuong.Name = "tb_soLuong";
+            this.tb_soLuong.Size = new System.Drawing.Size(241, 30);
+            this.tb_soLuong.TabIndex = 74;
             // 
             // label5
             // 
@@ -125,15 +118,16 @@
             this.label2.TabIndex = 67;
             this.label2.Text = "Mã Laptop";
             // 
-            // button1
+            // btn_them
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(460, 213);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 55);
-            this.button1.TabIndex = 84;
-            this.button1.Text = "Thêm ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_them.BackColor = System.Drawing.Color.Lime;
+            this.btn_them.Location = new System.Drawing.Point(438, 195);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(191, 55);
+            this.btn_them.TabIndex = 84;
+            this.btn_them.Text = "Thêm ";
+            this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // label7
             // 
@@ -159,6 +153,14 @@
             this.label1.TabIndex = 88;
             this.label1.Text = "Chi tiết phiếu nhập";
             // 
+            // tb_maLaptop
+            // 
+            this.tb_maLaptop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_maLaptop.Location = new System.Drawing.Point(54, 100);
+            this.tb_maLaptop.Name = "tb_maLaptop";
+            this.tb_maLaptop.Size = new System.Drawing.Size(241, 30);
+            this.tb_maLaptop.TabIndex = 85;
+            // 
             // ChiTietNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,15 +184,15 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_giaNhap;
+        private System.Windows.Forms.TextBox tb_soLuong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_maLaptop;
     }
 }

@@ -50,7 +50,7 @@ namespace XML_CuoiKi.UI
                     string quyen = rows[0]["PhanQuyen"].ToString();
                     string hoTen = rows[0]["HoTen"].ToString();
 
-                    if (quyen == "quan_ly")
+                    if (quyen == "admin")
                     {
                         MessageBox.Show("Đăng nhập thành công với quyền Admin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         // Chuyển đến giao diện quản lý
@@ -60,9 +60,9 @@ namespace XML_CuoiKi.UI
                         home.Show();
                         this.Hide();
                     }
-                    if (quyen == "nhan_vien")
+                    else if (quyen == "nhan_vien")
                     {
-                        MessageBox.Show("Đăng nhập thành công với quyền quản lý!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Đăng nhập thành công với quyền nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         // Chuyển đến giao diện quản lý
                         Home home = new Home();
                         home.Quyen = "Nhân viên";

@@ -38,5 +38,27 @@ namespace XML_CuoiKi.UI
                 MessageBox.Show("Lỗi khi tải chi tiết: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btn_them_Click(object sender, EventArgs e)
+        {
+            string MaLaptop = tb_maLaptop.Text;
+            string GiaNhap = tb_giaNhap.Text;
+            string SoLuong = tb_soLuong.Text;
+            nl.ThemChiTiet(MaNhapHang, MaLaptop, SoLuong, GiaNhap);
+            MessageBox.Show("Thêm Laptop thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ChiTietNhap_load(sender, e);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                tb_maLaptop.Text = row.Cells["MaLaptop"].Value?.ToString();
+                tb_giaNhap.Text = row.Cells["GiaNhap"].Value?.ToString();
+                tb_soLuong.Text = row.Cells["SoLuongNhap"].Value?.ToString();
+            }
+        }
     }
 }

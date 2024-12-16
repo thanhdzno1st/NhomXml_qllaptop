@@ -310,7 +310,7 @@
             this.tb_phanQuyen.FormattingEnabled = true;
             this.tb_phanQuyen.Items.AddRange(new object[] {
             "nhan_vien",
-            "quan_ly",
+            "admin",
             "khach_hang"});
             this.tb_phanQuyen.Location = new System.Drawing.Point(995, 125);
             this.tb_phanQuyen.Name = "tb_phanQuyen";

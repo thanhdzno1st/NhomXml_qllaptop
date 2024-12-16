@@ -36,8 +36,13 @@ namespace XML_CuoiKi
 
         private void btn_nguoidung_Click(object sender, EventArgs e)
         {
-            ShowControl(new NguoiDung());
-
+            if(Quyen == "Admin") { 
+                ShowControl(new NguoiDung());
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào đây", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
   

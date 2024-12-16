@@ -30,4 +30,16 @@
     <SoLuongNhap>3</SoLuongNhap>
     <GiaNhap>30000</GiaNhap>
   </_x0027_ChiTietNhap_x0027_>
+  <_x0027_ChiTietNhap_x0027_>
+    <MaNhapHang>2</MaNhapHang>
+    <MaLaptop>1</MaLaptop>
+    <SoLuongNhap>3</SoLuongNhap>
+    <GiaNhap>2000</GiaNhap>
+  </_x0027_ChiTietNhap_x0027_>
+  <_x0027_ChiTietNhap_x0027_>
+    <MaNhapHang>2</MaNhapHang>
+    <MaLaptop>2</MaLaptop>
+    <SoLuongNhap>3</SoLuongNhap>
+    <GiaNhap>4000</GiaNhap>
+  </_x0027_ChiTietNhap_x0027_>
 </NewDataSet>

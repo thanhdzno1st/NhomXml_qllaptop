@@ -25,42 +25,46 @@
   </xs:schema>
   <_x0027_NguoiDung_x0027_>
     <MaNguoiDung>1</MaNguoiDung>
-    <HoTen>Cái lồn cặc chó</HoTen>
+    <HoTen>Admin 1</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
-    <Email>concac@gmail.com</Email>
+    <Email>
+    </Email>
     <SoDienThoai>0123123123</SoDienThoai>
     <DiaChi>Cổ Luỹ</DiaChi>
     <TenDangNhap>lamphong1</TenDangNhap>
     <MatKhau>123</MatKhau>
-    <PhanQuyen>quan_ly</PhanQuyen>
+    <PhanQuyen>admin</PhanQuyen>
   </_x0027_NguoiDung_x0027_>
   <_x0027_NguoiDung_x0027_>
     <MaNguoiDung>2</MaNguoiDung>
-    <HoTen>Cái lồn cặc chó</HoTen>
+    <HoTen>Admin 2</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
-    <Email>concac@gmail.com</Email>
+    <Email>
+    </Email>
     <SoDienThoai>0123123123</SoDienThoai>
     <DiaChi>Cổ Luỹ</DiaChi>
     <TenDangNhap>lamphong2</TenDangNhap>
     <MatKhau>123</MatKhau>
-    <PhanQuyen>quan_ly</PhanQuyen>
+    <PhanQuyen>admin</PhanQuyen>
   </_x0027_NguoiDung_x0027_>
   <_x0027_NguoiDung_x0027_>
     <MaNguoiDung>3</MaNguoiDung>
-    <HoTen>Cái lồn cặc chó</HoTen>
+    <HoTen>Nhân viên</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
-    <Email>concac@gmail.com</Email>
+    <Email>
+    </Email>
     <SoDienThoai>0123123123</SoDienThoai>
     <DiaChi>Cổ Luỹ</DiaChi>
     <TenDangNhap>lamphong3</TenDangNhap>
     <MatKhau>123</MatKhau>
-    <PhanQuyen>khach_hang</PhanQuyen>
+    <PhanQuyen>nhan_vien</PhanQuyen>
   </_x0027_NguoiDung_x0027_>
   <_x0027_NguoiDung_x0027_>
     <MaNguoiDung>4</MaNguoiDung>
-    <HoTen>Cái lồn cặc chó</HoTen>
+    <HoTen>Khách hàng</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
-    <Email>concac@gmail.com</Email>
+    <Email>
+    </Email>
     <SoDienThoai>0123123123</SoDienThoai>
     <DiaChi>Cổ Luỹ</DiaChi>
     <TenDangNhap>lamphong4</TenDangNhap>

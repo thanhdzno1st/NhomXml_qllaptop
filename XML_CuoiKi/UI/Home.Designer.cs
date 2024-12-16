@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -49,7 +50,6 @@
             this.btn_Danhmuc = new System.Windows.Forms.Button();
             this.btn_laptop = new System.Windows.Forms.Button();
             this.Panel_navigation = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,13 +69,12 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1588, 100);
             this.panel1.TabIndex = 0;
-
             // 
             // tb_quyen
             // 
             this.tb_quyen.AutoSize = true;
             this.tb_quyen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tb_quyen.Location = new System.Drawing.Point(1472, 72);
+            this.tb_quyen.Location = new System.Drawing.Point(1443, 72);
             this.tb_quyen.Name = "tb_quyen";
             this.tb_quyen.Size = new System.Drawing.Size(50, 17);
             this.tb_quyen.TabIndex = 6;
@@ -114,7 +113,7 @@
             // 
             this.tb_quyenss.AutoSize = true;
             this.tb_quyenss.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tb_quyenss.Location = new System.Drawing.Point(1403, 72);
+            this.tb_quyenss.Location = new System.Drawing.Point(1374, 72);
             this.tb_quyenss.Name = "tb_quyenss";
             this.tb_quyenss.Size = new System.Drawing.Size(58, 17);
             this.tb_quyenss.TabIndex = 3;
@@ -158,7 +157,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(244, 857);
             this.panel2.TabIndex = 1;
-
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(6, 241);
+            this.button4.Margin = new System.Windows.Forms.Padding(30);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(238, 66);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Nhập hàng";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button1
             // 
@@ -199,7 +215,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(170, 2);
             this.panel4.TabIndex = 3;
-
             // 
             // btn_nguoidung
             // 
@@ -314,25 +329,6 @@
             this.Panel_navigation.Name = "Panel_navigation";
             this.Panel_navigation.Size = new System.Drawing.Size(1341, 752);
             this.Panel_navigation.TabIndex = 2;
-
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(6, 241);
-            this.button4.Margin = new System.Windows.Forms.Padding(30);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(238, 66);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Nhập hàng";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // Home
             // 

@@ -73,5 +73,47 @@ namespace XML_CuoiKi.Models
 
             return dt;
         }
+        public void ThemChiTiet(string MaNhapHang, string MaLaptop, string SoLuongNhap, string GiaNhap)
+        {
+                string ChiTiet = "<_x0027_ChiTietNhap_x0027_>" +
+                                        "<MaNhapHang>" + MaNhapHang + "</MaNhapHang>" +
+                                        "<MaLaptop>" + MaLaptop + "</MaLaptop>" +
+                                        "<SoLuongNhap>" + SoLuongNhap + "</SoLuongNhap>" +
+                                        "<GiaNhap>" + GiaNhap + "</GiaNhap>" +
+                                        "</_x0027_ChiTietNhap_x0027_>";
+
+                Fxml.Them("ChiTietNhap.xml", ChiTiet);
+            if (!int.TryParse(GiaNhap, out int giaNhapInt))
+            {
+                throw new Exception("Giá bán không hợp lệ: " + GiaNhap);
+            }
+            if (!int.TryParse(SoLuongNhap, out int SoLuongInt))
+            {
+                throw new Exception("Số lượng không hợp lệ: " + SoLuongNhap);
+            }
+            CapNhatTongTien(MaNhapHang, giaNhapInt, SoLuongInt);                   
+        }
+
+
+
+        public void CapNhatTongTien(string MaNhapHang, int giaBan, int SoLuong)
+        {
+            int tongTien = 0;
+            tongTien = giaBan * SoLuong;
+            // Lấy tổng tiền hiện tại từ HoaDon.xml để cộng thêm
+            XmlDocument doc1 = new XmlDocument();
+            doc1.Load(Application.StartupPath + "\\NhapLaptop.xml");
+            XmlNode node1 = doc1.SelectSingleNode("NewDataSet/_x0027_NhapLaptop_x0027_[MaNhapHang = '" + MaNhapHang + "']");
+
+            if (node1 != null)
+            {
+                int tongTienCu = int.Parse(node1["TongTienNhap"].InnerText); // Lấy tổng tiền cũ từ HoaDon.xml
+                tongTien += tongTienCu; // Cộng tổng tiền hiện tại vào tổng tiền mới
+
+                // Cập nhật tổng tiền mới vào HoaDon.xml
+                node1["TongTienNhap"].InnerText = tongTien.ToString();
+                doc1.Save(Application.StartupPath + "\\NhapLaptop.xml");
+            }
+        }
     }
 }
