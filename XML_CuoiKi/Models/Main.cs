@@ -36,6 +36,7 @@ namespace XML_CuoiKi.Models
             Fxml.InsertOrUpDateSQL("delete from NhaCungCap");
             Fxml.InsertOrUpDateSQL("delete from HoaDon");
             Fxml.InsertOrUpDateSQL("delete from ChiTietHoaDon");
+            Fxml.InsertOrUpDateSQL("delete from NhapLaptop");
             //Cập nhập toàn bộ dữ liệu các bảng
             CapNhapTungBang("NguoiDung");
             CapNhapTungBang("Laptop");
@@ -43,6 +44,7 @@ namespace XML_CuoiKi.Models
             CapNhapTungBang("NhaCungCap");
             CapNhapTungBang("HoaDon");
             CapNhapTungBang("ChiTietHoaDon");
+            CapNhapTungBang("NhapLaptop");
         }
     }
 }

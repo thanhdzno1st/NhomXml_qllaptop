@@ -10,8 +10,6 @@ namespace XML_CuoiKi
         public string MaHoaDon { get; set; }
         Models.HoaDon hd = new Models.HoaDon();
         ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon();
-        Models.ChiTietHoaDon ct = new Models.ChiTietHoaDon();
-
         public ThemChiTietHoaDon()
         {
             InitializeComponent();

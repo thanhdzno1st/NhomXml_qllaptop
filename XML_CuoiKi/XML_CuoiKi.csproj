@@ -141,12 +141,6 @@
     <Compile Include="UI\TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\XemHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\XemHoaDon.Designer.cs">
-      <DependentUpon>XemHoaDon.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UI\ChiTietNhap.resx">
       <DependentUpon>ChiTietNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\XemHoaDon.resx">
-      <DependentUpon>XemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
