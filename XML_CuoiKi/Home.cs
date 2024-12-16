@@ -12,9 +12,15 @@ namespace XML_CuoiKi
 {
     public partial class Home : Form
     {
-        public Home()
+
+        private string hoTen;
+        private string phanQuyen;
+
+        public Home(string hoTen, string phanQuyen)
         {
             InitializeComponent();
+            this.hoTen = hoTen;
+            this.phanQuyen = phanQuyen;
         }
         private void ShowControl(UserControl control)
         {
@@ -62,6 +68,8 @@ namespace XML_CuoiKi
 
         private void Home_Load(object sender, EventArgs e)
         {
+            label1.Text = "Họ tên: " + hoTen;  
+            label2.Text = "Quyền: " + phanQuyen;  
             ShowControl(new Laptop());
 
         }
