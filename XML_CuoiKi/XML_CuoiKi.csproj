@@ -73,6 +73,7 @@
     <Compile Include="Models\Main.cs" />
     <Compile Include="Models\NguoiDung.cs" />
     <Compile Include="Models\NhaCungCap.cs" />
+    <Compile Include="Models\NhapLaptop.cs" />
     <Compile Include="UI\ChiTietNhap.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -18,6 +18,7 @@ namespace XML_CuoiKi.Models
             connect.TaoXML("HoaDon");
             connect.TaoXML("ChiTietHoaDon");
             connect.TaoXML("NhapLaptop");
+            connect.TaoXML("ChiTietNhap");
         }
     }
 }

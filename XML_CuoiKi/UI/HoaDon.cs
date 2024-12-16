@@ -71,7 +71,7 @@ namespace XML_CuoiKi
 
                 tb_maHoaDon.Text = row.Cells["MaHoaDon"].Value?.ToString();
                 tb_maNguoiDung.Text = row.Cells["MaNguoiDung"].Value?.ToString();
-                tb_search.Text = row.Cells["MaNguoiDung"].Value?.ToString();
+                tb_search.Text = row.Cells["MaHoaDon"].Value?.ToString();
             }
         }
 

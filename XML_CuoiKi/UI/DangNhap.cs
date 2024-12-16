@@ -52,10 +52,20 @@ namespace XML_CuoiKi.UI
 
                     if (quyen == "quan_ly")
                     {
+                        MessageBox.Show("Đăng nhập thành công với quyền Admin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Chuyển đến giao diện quản lý
+                        Home home = new Home();
+                        home.Quyen = "Admin";
+                        home.HoTen = hoTen;
+                        home.Show();
+                        this.Hide();
+                    }
+                    if (quyen == "nhan_vien")
+                    {
                         MessageBox.Show("Đăng nhập thành công với quyền quản lý!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         // Chuyển đến giao diện quản lý
                         Home home = new Home();
-                        home.Quyen = "Quản lý";
+                        home.Quyen = "Nhân viên";
                         home.HoTen = hoTen;
                         home.Show();
                         this.Hide();
