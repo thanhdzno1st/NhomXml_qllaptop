@@ -37,4 +37,9 @@
     <TenDanhMuc>Laptop AI</TenDanhMuc>
     <MoTa>hihi</MoTa>
   </_x0027_DanhMucLaptop_x0027_>
+  <_x0027_DanhMucLaptop_x0027_>
+    <MaDanhMuc>5</MaDanhMuc>
+    <TenDanhMuc>Danh mục test</TenDanhMuc>
+    <MoTa>mô tả test</MoTa>
+  </_x0027_DanhMucLaptop_x0027_>
 </NewDataSet>

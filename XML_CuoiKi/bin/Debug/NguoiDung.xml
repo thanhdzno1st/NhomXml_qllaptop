@@ -49,8 +49,7 @@
     <MaNguoiDung>4</MaNguoiDung>
     <HoTen>Khách hàng A</HoTen>
     <NgaySinh>20-04-2004</NgaySinh>
-    <Email>
-    </Email>
+    <Email />
     <SoDienThoai>0123123123</SoDienThoai>
     <DiaChi>Cổ Luỹ</DiaChi>
     <TenDangNhap>lamphong4</TenDangNhap>

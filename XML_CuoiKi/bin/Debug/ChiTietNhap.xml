@@ -36,4 +36,20 @@
     <GiaNhap>25000</GiaNhap>
     <ThanhTienNhap>1250000</ThanhTienNhap>
   </_x0027_ChiTietNhap_x0027_>
+  <_x0027_ChiTietNhap_x0027_>
+    <MaChiTietNhap>3</MaChiTietNhap>
+    <MaNhapHang>2</MaNhapHang>
+    <MaLaptop>1</MaLaptop>
+    <SoLuongNhap>2</SoLuongNhap>
+    <GiaNhap>2000</GiaNhap>
+    <ThanhTienNhap>4000</ThanhTienNhap>
+  </_x0027_ChiTietNhap_x0027_>
+  <_x0027_ChiTietNhap_x0027_>
+    <MaChiTietNhap>4</MaChiTietNhap>
+    <MaNhapHang>2</MaNhapHang>
+    <MaLaptop>2</MaLaptop>
+    <SoLuongNhap>20</SoLuongNhap>
+    <GiaNhap>3000</GiaNhap>
+    <ThanhTienNhap>60000</ThanhTienNhap>
+  </_x0027_ChiTietNhap_x0027_>
 </NewDataSet>

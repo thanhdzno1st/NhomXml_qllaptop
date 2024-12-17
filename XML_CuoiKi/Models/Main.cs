@@ -29,9 +29,10 @@ namespace XML_CuoiKi.Models
         }
         public void CapNhapSQL()
         {
-            Fxml.InsertOrUpDateSQL("DELETE FROM NhapLaptop");
+
             Fxml.InsertOrUpDateSQL("DELETE FROM ChiTietHoaDon");
             Fxml.InsertOrUpDateSQL("DELETE FROM ChiTietNhap");
+            Fxml.InsertOrUpDateSQL("DELETE FROM NhapLaptop");
             Fxml.InsertOrUpDateSQL("DELETE FROM NhaCungCap");
             Fxml.InsertOrUpDateSQL("DELETE FROM HoaDon");
             Fxml.InsertOrUpDateSQL("DELETE FROM Laptop");
